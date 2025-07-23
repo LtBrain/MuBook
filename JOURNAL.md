@@ -7,13 +7,13 @@ MuBook is a x86 portable board which is designed around the LattePanda Mu and ha
 --- 
 Create the basic board, work out some I/O choices.  
 
-USB 3.0 ---- 2 Ports  
-USB 2.0 ---- 2 Ports
+USB 3.0 ---- 2 Ports  (7/13 - 7/16, had some issues with KiCad diff pairs)
+USB 2.0 ---- 2 Ports  (Front IO not done yet)
 1 GBE Ethernet  
-HDMI Type A  
+HDMI Type A  (7/15 - 7/16)
 M.2 M-key (for NVMe)  
 M.2 E-key (for WiFi)  
-4x SATA?  
+4x SATA?  (7/17 - 7/20, worked on finding suitable ICs for doing PCIE to SATA bridge without sacrificing performance)
 
 2025-07-20
 ---
@@ -25,3 +25,23 @@ Route all of power regulation and the back USB and HDMI circuits:
 - Did full calculations for the impedance controlled traces (USB3, HDMI)  
 - Designed power input to function with 12V or 15V (might change USBC to 12V)  
 - Settled on a 170 x 170 mm board (Mini-ITX standard)  
+
+2025-07-22
+---
+
+Finish the RealTek 1 GBE IC routing, including all of its supply and support components:  
+
+<img width="382" height="613" alt="image" src="https://github.com/user-attachments/assets/5ec1afbd-87c4-4810-b6c1-20e9cc96f326" />
+
+Started the M.2 and PCIE device routing today, made a large breakout of the SODIMM connector's high-speed IO to ease routing for M.2 slots
+
+<img width="269" height="641" alt="image" src="https://github.com/user-attachments/assets/e9424e81-8bdd-48a6-9376-cffc4b3abd9d" />  
+
+
+Also added fan header and full HDMI support component rigging (actually set up the regulators correctly this time) 
+
+To Do for Tomorrow:
+- [] Do back I/O checks for any faults/DRC
+- [] Start work on the SATA PCB routing
+- [] Work out 4x USB 2.0 instead of 2x on the front I/O
+
