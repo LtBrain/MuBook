@@ -7,10 +7,10 @@ MuBook is a x86 portable board which is designed around the LattePanda Mu and ha
 --- 
 Create the basic board, work out some I/O choices.  
 
-USB 3.0 ---- 2 Ports  (7/13 - 7/16, had some issues with KiCad diff pairs)
-USB 2.0 ---- 2 Ports  (Front IO not done yet)
+USB 3.0 ---- 2 Ports  (7/13 - 7/16, had some issues with KiCad diff pairs)  
+USB 2.0 ---- 2 Ports  (Front IO not done yet)  
 1 GBE Ethernet  
-HDMI Type A  (7/15 - 7/16)
+HDMI Type A  (7/15 - 7/16)  
 M.2 M-key (for NVMe)  
 M.2 E-key (for WiFi)  
 4x SATA?  (7/17 - 7/20, worked on finding suitable ICs for doing PCIE to SATA bridge without sacrificing performance)  
@@ -18,7 +18,7 @@ M.2 E-key (for WiFi)
 Went with Type A USB because it was easier for me to implement compared to USB Type C, even at USB 3.0 speeds.  
 HDMI was needed because I don't plan on using a dGPU, rather the iGPU for monitor display  
 
-M.2 slots for boot drive and probably some WiFi in case ethernet doesn't pan out.
+M.2 slots for boot drive and probably some WiFi in case ethernet doesn't pan out for some reason.
 
 (Time: 4 Hrs)
 
@@ -61,8 +61,8 @@ Started the M.2 and PCIE device routing today, made a large breakout of the SODI
 Also added fan header and full HDMI support component rigging (actually set up the regulators correctly this time) 
 
 To Do for Tomorrow:
-- [] Do back I/O checks for any faults/DRC
-- [] Start work on the SATA PCB routing
-- [] Work out 4x USB 2.0 instead of 2x on the front I/O  
+- [ ] Do back I/O checks for any faults/DRC
+- [ ] Start work on the SATA PCB routing
+- [ ] Work out 4x USB 2.0 instead of 2x on the front I/O  
 
 (Time: 4.5 Hrs)
