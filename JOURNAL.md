@@ -66,3 +66,29 @@ To Do for Tomorrow:
 - [ ] Work out 4x USB 2.0 instead of 2x on the front I/O  
 
 (Time: 4.5 Hrs)
+
+2025-07-24
+---
+
+Completed the M.2 E Key and M Key high speed routing, had to shift the slots around so they would fit better (managed to avoid doing PCIE crossover), and routed all of the PCIE clkreq lines for the 2 slots.  
+
+<img width="1023" height="680" alt="image" src="https://github.com/user-attachments/assets/21773240-ebcf-44e2-946b-d4c6777193b2" />  
+  
+I finally fixed all of the intrapair skew of every single PCIe trace, DRC came back with a lot less errors :) 
+
+Today, I also put the mounting holes in, set for a 2280 and 2230 sized M.2 card for some extra expandability so that both sizes could be loaded onto the board without issue.    
+  
+In addition, I did some rerouting at the SODIMM connector to more effectively fit the traces that I would have to route (Decided to put the Row 1 traces on L4 with diff. pair vias and fanout the Row 2 traces on L1, was just much easier to implement. For example, routing the CLKREF traces became much easier when I shunted the R1 traces to the lower layer as much as possible, so i was able to fit it in without making the board excessively odd.
+
+**MAJOR CHANGE**  
+  
+<img width="724" height="593" alt="image" src="https://github.com/user-attachments/assets/5f16b608-35e6-4ce6-9686-6c41e816d82f" />  
+  
+
+After looking at my board, I decided the ITX standard was quite wasteful, as there was a massive open space at the front of the board. Because of this, I decided to cut down the size in this dimension, resizing it was as slim as possible while accomodating the dual M.2 slots if a 2280 sized card were to be used. This a reasonable amount of space for the front IO, so the design wouldn't change that much in terms of features. 
+  
+Also managed to get rid of all of the back I/O DRC faults and somewhat work out the SATA and 4x USB 2.0.  
+  
+The board is now approximately 170 cm x 140 cm.
+
+(Time: 6 Hrs)
