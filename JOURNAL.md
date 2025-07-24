@@ -67,7 +67,7 @@ To Do for Tomorrow:
 
 (Time: 4.5 Hrs)
 
-2025-07-24
+2025-07-23
 ---
 
 Completed the M.2 E Key and M Key high speed routing, had to shift the slots around so they would fit better (managed to avoid doing PCIE crossover), and routed all of the PCIE clkreq lines for the 2 slots.  
