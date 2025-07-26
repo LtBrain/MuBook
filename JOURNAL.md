@@ -92,3 +92,25 @@ Also managed to get rid of all of the back I/O DRC faults and somewhat work out 
 The board is now approximately 170 cm x 140 cm.
 
 (Time: 6 Hrs)
+
+2025-07-25
+---
+
+Today, I added 2 USB-C ports at 2.0 speeds for the front IO, using the HSIO 3 and 5 pins because they were the most exposed ones that I could access without having to reroute the entire chunk of diff pairs.  
+
+<img width="985" height="462" alt="image" src="https://github.com/user-attachments/assets/a7a13cda-b499-4b4c-8a7a-43725b849dd4" />  
+
+Had missed a day because I was doing a lot of PSAT practice, but all of the basic, bare minimum IO is finally in place, so the last thing I need to do is do the SATA schematics and PCB design:  
+  
+<img width="497" height="388" alt="image" src="https://github.com/user-attachments/assets/bb276bca-b48b-49c6-b114-acde52196e91" />  
+  
+I also wired up the reset and power pushbuttons, and will probably add a SPI flash chip as my secondary BIOS chip just so I can use the SATA bios without the risk of bricking the MU.  
+
+I am also probably going to hand assemble this as JLCPCB assembly + tariffs has made it insanely expensive (more than 300 USD), but the components are only around 30 dollars and I would only need a hotplate with solderpaste.  
+  
+
+(Time: 3 Hrs)
+
+
+ 
+
