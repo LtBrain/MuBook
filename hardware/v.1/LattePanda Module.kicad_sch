@@ -9203,7 +9203,7 @@
 		)
 		(uuid "e0a62276-85b9-40cd-a4dc-bb205f978c40")
 	)
-	(hierarchical_label "HSIO_6_TX-"
+	(hierarchical_label "HSIO_6_TX+"
 		(shape output)
 		(at 238.76 167.64 180)
 		(effects
@@ -9214,7 +9214,7 @@
 		)
 		(uuid "e11fbe13-aa2c-40bd-ad69-ea925f75a863")
 	)
-	(hierarchical_label "HSIO_6_TX+"
+	(hierarchical_label "HSIO_6_TX-"
 		(shape output)
 		(at 238.76 165.1 180)
 		(effects
