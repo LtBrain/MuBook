@@ -111,6 +111,24 @@ I am also probably going to hand assemble this as JLCPCB assembly + tariffs has 
 
 (Time: 3 Hrs)
 
+2025-07-26
+---
+
+Added 2 USB 2.0 ports to the front IO bay, transitioned the HSIO 10 and 11 traces from the Mu into 2 SATA lines. This involves the unfortunate sacrifice of 2 of my PCIe lanes on the slot, so I'm just going to design without this slot because a PCIe 3.0 x2 is not very common, and I might as well just use those 2 lanes for 2 more SATA plugs with the use of an ASM1061 PCIe to SATA bridge IC. However, these are quite rare, so I had to find some on AliExpress, and extract the symbol and footprint from an EasyEDA file.  
+  
+<img width="845" height="441" alt="image" src="https://github.com/user-attachments/assets/c80dcb5d-0643-4674-ad8b-0ce84f4094c1" />  
+Base setup for the ASM1061  
+  
+I went for the ASM1061 instead of some more common chips like the Marvell ones because it would be vastly easier to design for a 48 pin IC than a 76 pin IC, and much easier to assemble, especially because I plan to assemble this board by myself. The ASM1061 is a 1 lane PCIe to 2x SATA chip, so in total, this design will get 4 SATA ports. It also has an option of adding a SPI flash chip for custom firmware, but I will probaby skip this because I don't plan on using that feature for complexity reasons.  
+
+I also got some advice to reroute my extremely dense breakout of high-speed traces and add return vias to where they switched layers to avoid some pretty nasty impedance issues:  
+<img width="381" height="530" alt="image" src="https://github.com/user-attachments/assets/420a9b9d-b1ff-4db3-80a7-8b01cde42e65" />  
+  
+I had to do this a lot of times because adding the return vias in such a dense area would have cut some traces, and JLC doesn't offer blind vias. Also, KiCAD decided to reset all of my progress on this section of the board a couple times by closing itself out.  
+
+(Time: 5 Hrs)
+
+
 
  
 
