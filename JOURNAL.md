@@ -6,7 +6,8 @@ MuBook is a x86 portable board which is designed around the LattePanda Mu and ha
 2025-07-12
 --- 
 Create the basic board, work out some I/O choices.  
-
+I'm going off of the Mu's lite carrier project schematic file right now, but will modify a pretty good amount of the IO. Several people in the Lattepanda Mu Discord recommended this route to me because it takes a lot of the guesswork out of the design process, especially with how the HSIO will need to be broken out from the SODIMM. I plan to completely redesign the PCB for my usage though.  
+  
 USB 3.0 ---- 2 Ports  (7/13 - 7/16, had some issues with KiCad diff pairs)  
 USB 2.0 ---- 2 Ports  (Front IO not done yet)  
 1 GBE Ethernet  
