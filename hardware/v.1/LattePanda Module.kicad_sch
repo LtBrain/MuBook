@@ -6555,9 +6555,9 @@
 		)
 		(uuid "16ed486c-fd90-4770-a2d8-05235b5893d7")
 	)
-	(text "Lite Carrier has no second BIOS ROM\n~{BIOS_SEL} pull up to 3.3V to select ROM on LattePanda Mu"
+	(text "Cuprum has a second BIOS ROM\n~{BIOS_SEL} pull up to 3.3V to select ROM on LattePanda Mu"
 		(exclude_from_sim no)
-		(at 387.35 256.54 0)
+		(at 405.638 256.54 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6605,7 +6605,7 @@
 	)
 	(text "SPI is only used to connect to the BIOS ROM and discrete TPM\nCannot be used as a general SPI interface."
 		(exclude_from_sim no)
-		(at 387.35 245.11 0)
+		(at 405.638 247.65 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6903,10 +6903,6 @@
 		(uuid "17b3e800-3ae1-45eb-a119-17a5949efdde")
 	)
 	(no_connect
-		(at 351.79 243.84)
-		(uuid "1898fbec-d112-499d-b11d-eb9ca468417e")
-	)
-	(no_connect
 		(at 270.51 309.88)
 		(uuid "1b3a7a76-d2e5-4ab9-9410-77f1da88e6e0")
 	)
@@ -6933,10 +6929,6 @@
 	(no_connect
 		(at 351.79 264.16)
 		(uuid "3301956b-a4a8-4aad-9bf0-575f0433966b")
-	)
-	(no_connect
-		(at 270.51 190.5)
-		(uuid "39dac926-9c01-4734-829e-50ba25a185a9")
 	)
 	(no_connect
 		(at 351.79 298.45)
@@ -6983,10 +6975,6 @@
 		(uuid "50842422-fed5-42e5-b600-351389ffd031")
 	)
 	(no_connect
-		(at 351.79 251.46)
-		(uuid "52a81db0-2afd-494f-81e9-9aa277d382c7")
-	)
-	(no_connect
 		(at 270.51 297.18)
 		(uuid "53139611-db6b-46e0-bfd8-6cca055e3a7b")
 	)
@@ -6995,16 +6983,8 @@
 		(uuid "5656ab60-4081-48b8-9751-1728d4bc5691")
 	)
 	(no_connect
-		(at 270.51 200.66)
-		(uuid "56f801fd-36d4-4349-9db7-64010a1a4c10")
-	)
-	(no_connect
 		(at 351.79 269.24)
 		(uuid "593e0b75-c8a3-4dd2-a5cd-da1fea55a01c")
-	)
-	(no_connect
-		(at 270.51 203.2)
-		(uuid "5c2bad1c-6522-48d2-83ca-6d0075d1f26b")
 	)
 	(no_connect
 		(at 270.51 261.62)
@@ -7031,10 +7011,6 @@
 		(uuid "7275e9f5-e562-4066-9900-dcc0afe2eaa9")
 	)
 	(no_connect
-		(at 351.79 246.38)
-		(uuid "758ca651-5e7d-463b-9913-bd77d4b41b11")
-	)
-	(no_connect
 		(at 351.79 68.58)
 		(uuid "7e1b4659-0621-44e6-9bab-8fc8995e4613")
 	)
@@ -7055,10 +7031,6 @@
 		(uuid "8568e8fc-80dc-4001-a7a6-c52e22d5e2d4")
 	)
 	(no_connect
-		(at 351.79 238.76)
-		(uuid "88b0171c-116e-4f6d-90d7-f25e98e44de2")
-	)
-	(no_connect
 		(at 351.79 124.46)
 		(uuid "891033fd-5210-47cd-91bd-8dda35ad1b89")
 	)
@@ -7069,10 +7041,6 @@
 	(no_connect
 		(at 351.79 254)
 		(uuid "8e79fc82-7ecd-470a-830f-7a941a59934b")
-	)
-	(no_connect
-		(at 351.79 248.92)
-		(uuid "8f0a04f9-2305-46ed-ac9c-8d2f02d5f358")
 	)
 	(no_connect
 		(at 351.79 71.12)
@@ -7147,10 +7115,6 @@
 		(uuid "d612307a-f728-4299-9b8b-b4b26cc92a6c")
 	)
 	(no_connect
-		(at 351.79 241.3)
-		(uuid "da7e7607-4960-4a6a-abd4-62e114d56a1a")
-	)
-	(no_connect
 		(at 351.79 60.96)
 		(uuid "daacb685-585b-4791-aed5-4ed8cfd2913c")
 	)
@@ -7165,10 +7129,6 @@
 	(no_connect
 		(at 270.51 256.54)
 		(uuid "e50f0d9e-6b5f-4e35-a9f2-be73a90a4ffe")
-	)
-	(no_connect
-		(at 270.51 193.04)
-		(uuid "e78961e7-b61c-44dd-a52a-12d93046cf97")
 	)
 	(no_connect
 		(at 351.79 314.96)
@@ -7242,6 +7202,16 @@
 	)
 	(wire
 		(pts
+			(xy 381 259.08) (xy 381 261.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "035c20bc-baab-4973-9f36-0a8c3fe0ba66")
+	)
+	(wire
+		(pts
 			(xy 238.76 172.72) (xy 270.51 172.72)
 		)
 		(stroke
@@ -7269,6 +7239,16 @@
 			(type default)
 		)
 		(uuid "0883aaed-b142-4b69-8f69-9354140109e8")
+	)
+	(wire
+		(pts
+			(xy 270.51 200.66) (xy 238.76 200.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08ee3fdc-ebec-4db1-879e-f702e99a1f7c")
 	)
 	(wire
 		(pts
@@ -7302,7 +7282,7 @@
 	)
 	(wire
 		(pts
-			(xy 355.6 256.54) (xy 358.14 256.54)
+			(xy 355.6 256.54) (xy 382.27 256.54)
 		)
 		(stroke
 			(width 0)
@@ -7322,6 +7302,16 @@
 	)
 	(wire
 		(pts
+			(xy 351.79 246.38) (xy 368.3 246.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16b801e7-471f-49a6-9343-e18e14d942d8")
+	)
+	(wire
+		(pts
 			(xy 238.76 116.84) (xy 270.51 116.84)
 		)
 		(stroke
@@ -7329,6 +7319,26 @@
 			(type default)
 		)
 		(uuid "176f67c7-fd73-441b-a0ca-54e2041c3311")
+	)
+	(wire
+		(pts
+			(xy 381 241.3) (xy 381 243.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17f06605-aaec-441b-ade1-aa8f0f852178")
+	)
+	(wire
+		(pts
+			(xy 381 254) (xy 381 251.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ae1d8e2-f960-4719-8928-ce237b7d849d")
 	)
 	(wire
 		(pts
@@ -7369,6 +7379,16 @@
 			(type default)
 		)
 		(uuid "23bb05fa-8783-4610-90a6-5327856522be")
+	)
+	(wire
+		(pts
+			(xy 351.79 248.92) (xy 368.3 248.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "265d22f0-15a7-45d5-ad18-eb23164456e1")
 	)
 	(wire
 		(pts
@@ -7532,6 +7552,16 @@
 	)
 	(wire
 		(pts
+			(xy 351.79 251.46) (xy 368.3 251.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "452a2108-9936-421a-8bba-9a74243f21d3")
+	)
+	(wire
+		(pts
 			(xy 351.79 66.04) (xy 369.57 66.04)
 		)
 		(stroke
@@ -7549,6 +7579,16 @@
 			(type default)
 		)
 		(uuid "464bab07-6f2a-4470-9124-2f9dfb660dc3")
+	)
+	(wire
+		(pts
+			(xy 351.79 241.3) (xy 368.3 241.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "490f6f6c-2c08-45f6-b5e1-37e10214bfa4")
 	)
 	(wire
 		(pts
@@ -7579,16 +7619,6 @@
 			(type default)
 		)
 		(uuid "50e70814-7fdc-4378-bd7a-69f3302f27c6")
-	)
-	(wire
-		(pts
-			(xy 365.76 256.54) (xy 370.84 256.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "53a12b4e-6042-43cd-9219-adbd597e67bc")
 	)
 	(wire
 		(pts
@@ -7632,6 +7662,16 @@
 	)
 	(wire
 		(pts
+			(xy 381 269.24) (xy 381 273.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61672b46-8ac3-40fc-b248-bc036ab954f3")
+	)
+	(wire
+		(pts
 			(xy 238.76 88.9) (xy 270.51 88.9)
 		)
 		(stroke
@@ -7669,6 +7709,16 @@
 			(type default)
 		)
 		(uuid "6f249674-bd86-423e-ab94-de99ed59555e")
+	)
+	(wire
+		(pts
+			(xy 270.51 203.2) (xy 238.76 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f47b190-995e-4da7-9521-04a3736d8b01")
 	)
 	(wire
 		(pts
@@ -7752,6 +7802,16 @@
 	)
 	(wire
 		(pts
+			(xy 382.27 259.08) (xy 381 259.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d0bb0aa-965f-4968-9e41-72e5e63ae01e")
+	)
+	(wire
+		(pts
 			(xy 308.61 330.2) (xy 311.15 330.2)
 		)
 		(stroke
@@ -7779,6 +7839,16 @@
 			(type default)
 		)
 		(uuid "8468ece5-2b79-4eb0-b51a-ad0b9cf9b745")
+	)
+	(wire
+		(pts
+			(xy 351.79 243.84) (xy 368.3 243.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85158d5a-7cef-4ebe-abfc-53302223984a")
 	)
 	(wire
 		(pts
@@ -8002,6 +8072,16 @@
 	)
 	(wire
 		(pts
+			(xy 381 254) (xy 382.27 254)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae9f90a1-f80c-4b0b-8e05-6db4dd124125")
+	)
+	(wire
+		(pts
 			(xy 247.65 68.58) (xy 270.51 68.58)
 		)
 		(stroke
@@ -8039,6 +8119,16 @@
 			(type default)
 		)
 		(uuid "ba753765-c1c5-4aa4-8c8e-449cc27a02cf")
+	)
+	(wire
+		(pts
+			(xy 238.76 190.5) (xy 270.51 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bdf99fd0-9d98-4c0c-8f52-a240183c7bce")
 	)
 	(wire
 		(pts
@@ -8099,6 +8189,16 @@
 			(type default)
 		)
 		(uuid "c72b1381-0edd-45d3-89a3-cc54bd56aa02")
+	)
+	(wire
+		(pts
+			(xy 238.76 193.04) (xy 270.51 193.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c72bcf8c-fad1-4140-b5af-cd26fc96edcc")
 	)
 	(wire
 		(pts
@@ -8332,6 +8432,16 @@
 	)
 	(wire
 		(pts
+			(xy 351.79 238.76) (xy 368.3 238.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5a0725f-fbd4-4d38-9949-474c6a7b4fe3")
+	)
+	(wire
+		(pts
 			(xy 419.1 124.46) (xy 419.1 127)
 		)
 		(stroke
@@ -8410,6 +8520,17 @@
 			(justify right)
 		)
 		(uuid "00c8e315-c422-4ab1-88a2-405da9c34e5e")
+	)
+	(hierarchical_label "SPI_IO0"
+		(shape output)
+		(at 368.3 241.3 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "02f13a27-2c32-4117-909f-b8c9e1e9809a")
 	)
 	(hierarchical_label "FAN_1_TAC"
 		(shape input)
@@ -8554,6 +8675,17 @@
 		)
 		(uuid "2520ff67-d7f3-47bb-b4b7-88dc233f08d5")
 	)
+	(hierarchical_label "USB_2_P8-"
+		(shape bidirectional)
+		(at 238.76 203.2 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2ff85169-bf3a-466a-886d-0d7d94eda68f")
+	)
 	(hierarchical_label "DDI_B_TX2-"
 		(shape output)
 		(at 238.76 231.14 180)
@@ -8575,6 +8707,17 @@
 			(justify right)
 		)
 		(uuid "37e27a2b-97e8-4717-8f76-3d10a5d6a45f")
+	)
+	(hierarchical_label "SPI_CS"
+		(shape output)
+		(at 368.3 251.46 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "38330a12-90f5-45fc-b416-df245cfdc366")
 	)
 	(hierarchical_label "DDI_B_TX0+"
 		(shape output)
@@ -8752,6 +8895,17 @@
 		)
 		(uuid "4a00c854-09c1-4dd4-b8a6-f1c72d5d1bc8")
 	)
+	(hierarchical_label "SPI_IO1"
+		(shape output)
+		(at 368.3 243.84 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4e6ab6a5-d509-487d-9e49-fbf13d45827e")
+	)
 	(hierarchical_label "~{PWR_SW}"
 		(shape input)
 		(at 247.65 60.96 180)
@@ -8762,6 +8916,17 @@
 			(justify right)
 		)
 		(uuid "4e7a2a33-f032-4645-96b4-d5778350b5a5")
+	)
+	(hierarchical_label "SPI_CLK"
+		(shape output)
+		(at 368.3 238.76 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "549d9be3-9239-46a0-ad9a-d084fd5c7355")
 	)
 	(hierarchical_label "HSIO_0_TX+"
 		(shape output)
@@ -8917,6 +9082,17 @@
 		)
 		(uuid "8964868f-ac21-4327-a081-b8d0a8578ccd")
 	)
+	(hierarchical_label "USB_2_P4-"
+		(shape bidirectional)
+		(at 238.76 193.04 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8bea463a-884e-4245-8456-53bb06b90376")
+	)
 	(hierarchical_label "FAN_1_PWM"
 		(shape output)
 		(at 369.57 63.5 0)
@@ -8927,6 +9103,17 @@
 			(justify left)
 		)
 		(uuid "8c2a1342-27ca-4164-9955-824b65b29e12")
+	)
+	(hierarchical_label "USB_2_P4+"
+		(shape bidirectional)
+		(at 238.76 190.5 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "90ffc740-ff1c-4d35-9938-acf8d98988d1")
 	)
 	(hierarchical_label "USB_2_P1+"
 		(shape bidirectional)
@@ -9060,6 +9247,17 @@
 		)
 		(uuid "ac2cd114-18ef-4ff0-92c1-e7521937db9d")
 	)
+	(hierarchical_label "SPI_IO3"
+		(shape output)
+		(at 368.3 248.92 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b51c2a05-deb4-4a57-8737-04fe92cb3daf")
+	)
 	(hierarchical_label "USB_2_P2+"
 		(shape bidirectional)
 		(at 238.76 175.26 180)
@@ -9136,6 +9334,17 @@
 			(justify right)
 		)
 		(uuid "cb18e2bd-90be-4c29-bd9a-86850f22ce8c")
+	)
+	(hierarchical_label "SPI_IO2"
+		(shape output)
+		(at 368.3 246.38 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d0e9b671-f713-440a-96c7-b5043cf7081d")
 	)
 	(hierarchical_label "HSIO_3_RX+"
 		(shape input)
@@ -9312,6 +9521,17 @@
 			(justify right)
 		)
 		(uuid "f0d594b7-b36d-473a-9f84-0b7cbe2ed67b")
+	)
+	(hierarchical_label "USB_2_P8+"
+		(shape bidirectional)
+		(at 238.76 200.66 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f2b3657d-9257-40da-a591-7cabe6fa9734")
 	)
 	(hierarchical_label "HSIO_8_RX-"
 		(shape input)
@@ -10244,6 +10464,72 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 381 273.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0e1dd39b-4aff-4ecd-b2f5-b87773e50ea0")
+		(property "Reference" "#PWR0197"
+			(at 381 279.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 381 278.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 381 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 381 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 381 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d78f7d3e-9f2b-4756-bf87-801a3901557f")
+		)
+		(instances
+			(project "[DFR1142]Lite Carrier for LattePanda Mu"
+				(path "/2a6d114a-7fd7-4207-b5f7-4ea9c34f36aa/6eee02c2-78c9-4e83-9ccf-e0f7690b57bf"
+					(reference "#PWR0197")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 419.1 127 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10539,6 +10825,147 @@
 			(project "[DFR1142]Lite Carrier for LattePanda Mu"
 				(path "/2a6d114a-7fd7-4207-b5f7-4ea9c34f36aa/6eee02c2-78c9-4e83-9ccf-e0f7690b57bf"
 					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 381 265.43 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5aef6b24-3127-46d0-90bc-51ff149e2e46")
+		(property "Reference" "R95"
+			(at 383.54 265.938 90)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10K/1%"
+			(at 385.318 262.128 90)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "A_HDJ_Library:R_0402_1005Metric"
+			(at 382.778 265.43 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_YAGEO-RC0402FR-0710KL_C60490.pdf"
+			(at 381 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 381 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SCH_Show_Footprint" ""
+			(at 381 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 381 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 381 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 381 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part#" "C60490"
+			(at 381 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RC0402FR-0710KL"
+			(at 381 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0402"
+			(at 381 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C60490"
+			(at 381 265.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ef7d57d4-39f5-4ebc-b634-7f47a6713a8e")
+		)
+		(pin "2"
+			(uuid "4321c54b-e4e3-4161-9921-8b53412d2fd1")
+		)
+		(instances
+			(project "[DFR1142]Lite Carrier for LattePanda Mu"
+				(path "/2a6d114a-7fd7-4207-b5f7-4ea9c34f36aa/6eee02c2-78c9-4e83-9ccf-e0f7690b57bf"
+					(reference "R95")
 					(unit 1)
 				)
 			)
@@ -11144,7 +11571,7 @@
 	(symbol
 		(lib_name "+3V3_1")
 		(lib_id "power:+3V3")
-		(at 370.84 256.54 270)
+		(at 381 241.3 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11153,7 +11580,7 @@
 		(fields_autoplaced yes)
 		(uuid "9af72f05-a8d3-49ae-83f2-140aca37897b")
 		(property "Reference" "#PWR010"
-			(at 367.03 256.54 0)
+			(at 381 245.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11162,7 +11589,7 @@
 			)
 		)
 		(property "Value" "VPullup"
-			(at 374.65 256.5399 90)
+			(at 383.54 240.0299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11171,7 +11598,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 370.84 256.54 0)
+			(at 381 241.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11180,7 +11607,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 370.84 256.54 0)
+			(at 381 241.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11189,7 +11616,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VPullup\""
-			(at 370.84 256.54 0)
+			(at 381 241.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11933,6 +12360,96 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x03_Pin")
+		(at 387.35 256.54 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f8033956-f206-44c9-8b79-dfb82d52b211")
+		(property "Reference" "J88"
+			(at 388.62 255.2699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x03_Pin"
+			(at 388.62 257.8099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
+			(at 387.35 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 387.35 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated"
+			(at 387.35 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "PZ2.54-1*3"
+			(at 387.35 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "Jumper"
+			(at 387.35 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "d72469e8-e48f-498f-b720-6cca63248f72")
+		)
+		(pin "1"
+			(uuid "b85fa19d-83fd-462a-848c-d99176834d8e")
+		)
+		(pin "2"
+			(uuid "fee36367-9afe-4ff1-a072-16406e97bddb")
+		)
+		(instances
+			(project "[DFR1142]Lite Carrier for LattePanda Mu"
+				(path "/2a6d114a-7fd7-4207-b5f7-4ea9c34f36aa/6eee02c2-78c9-4e83-9ccf-e0f7690b57bf"
+					(reference "J88")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 355.6 46.99 0)
 		(unit 1)
@@ -12000,7 +12517,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 361.95 256.54 90)
+		(at 381 247.65 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12008,7 +12525,7 @@
 		(dnp no)
 		(uuid "fff394a0-f2fd-4358-936e-3cc7a5be47b5")
 		(property "Reference" "R2"
-			(at 361.442 259.08 90)
+			(at 383.54 248.158 90)
 			(effects
 				(font
 					(size 1 1)
@@ -12017,7 +12534,7 @@
 			)
 		)
 		(property "Value" "10K/1%"
-			(at 365.252 260.858 90)
+			(at 385.318 244.348 90)
 			(effects
 				(font
 					(size 1 1)
@@ -12026,7 +12543,7 @@
 			)
 		)
 		(property "Footprint" "A_HDJ_Library:R_0402_1005Metric"
-			(at 361.95 258.318 90)
+			(at 382.778 247.65 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12034,8 +12551,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 361.95 256.54 0)
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_YAGEO-RC0402FR-0710KL_C60490.pdf"
+			(at 381 247.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12044,7 +12561,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 361.95 256.54 0)
+			(at 381 247.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12053,7 +12570,7 @@
 			)
 		)
 		(property "SCH_Show_Footprint" ""
-			(at 361.95 256.54 0)
+			(at 381 247.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12062,7 +12579,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 361.95 256.54 0)
+			(at 381 247.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12071,7 +12588,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 361.95 256.54 0)
+			(at 381 247.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12080,7 +12597,43 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 361.95 256.54 0)
+			(at 381 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part#" "C60490"
+			(at 381 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RC0402FR-0710KL"
+			(at 381 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0402"
+			(at 381 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C60490"
+			(at 381 247.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)

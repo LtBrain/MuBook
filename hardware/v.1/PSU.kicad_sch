@@ -4741,7 +4741,7 @@
 		)
 		(uuid "07d6938f-c373-4ac7-b45a-f67bb474f0c1")
 	)
-	(text "15V PD Input"
+	(text "12V PD Input"
 		(exclude_from_sim no)
 		(at 162.56 237.49 0)
 		(effects
@@ -4817,7 +4817,7 @@
 		)
 		(uuid "b7b67f65-b060-4e63-802a-4aca18a7eb41")
 	)
-	(text "CH224K get DC 15V power from USB-PD adapter"
+	(text "CH224K get DC 12V power from USB-PD adapter"
 		(exclude_from_sim no)
 		(at 245.11 276.86 0)
 		(effects
@@ -17144,7 +17144,7 @@
 				)
 			)
 		)
-		(property "Value" "56K/1%"
+		(property "Value" "24K/1%"
 			(at 297.18 250.19 90)
 			(effects
 				(font
@@ -18348,7 +18348,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+15V"
+		(property "Value" "+12V"
 			(at 218.44 238.76 0)
 			(effects
 				(font

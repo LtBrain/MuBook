@@ -63,7 +63,36 @@
           "width": 0.12
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "courtyards_overlap|199610749|142595000|7f9aa930-d9da-4b31-b553-66ae0cde5f7c|e5d10195-0961-4c0f-8c68-38f7ce1cba9e",
+          "SODIMM is tall enough"
+        ],
+        [
+          "courtyards_overlap|199645000|146420000|2113e9d9-5710-42da-9144-fe2b927ab3e2|7f9aa930-d9da-4b31-b553-66ae0cde5f7c",
+          ""
+        ],
+        [
+          "courtyards_overlap|201050000|147585000|468e1456-c3ab-4238-b192-cfdc02c6f7b6|7f9aa930-d9da-4b31-b553-66ae0cde5f7c",
+          "SODIMM is tall enough"
+        ],
+        [
+          "courtyards_overlap|209520000|149770000|7f9aa930-d9da-4b31-b553-66ae0cde5f7c|e5860a77-6b64-4ee6-8759-1e3def6d3368",
+          "SODIMM is tall enough"
+        ],
+        [
+          "courtyards_overlap|211165000|144345000|7f9aa930-d9da-4b31-b553-66ae0cde5f7c|de101410-9e81-4785-a8f3-03074a9da86b",
+          ""
+        ],
+        [
+          "courtyards_overlap|216432545|143263784|7f9aa930-d9da-4b31-b553-66ae0cde5f7c|db3c24e2-9ec0-4d01-a407-5a3e110106d9",
+          ""
+        ],
+        [
+          "courtyards_overlap|216457545|148713784|3cd8f5af-e0e6-4715-abe5-a04bbac9c1a1|7f9aa930-d9da-4b31-b553-66ae0cde5f7c",
+          "SODIMM is tall enough"
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -73,7 +102,7 @@
         "connection_width": "warning",
         "copper_edge_clearance": "error",
         "copper_sliver": "warning",
-        "courtyards_overlap": "error",
+        "courtyards_overlap": "warning",
         "creepage": "error",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
@@ -227,7 +256,7 @@
         },
         "single_track_defaults": {
           "corner_radius_percentage": 100,
-          "corner_style": 0,
+          "corner_style": 1,
           "max_amplitude": 1.0,
           "min_amplitude": 0.1,
           "single_sided": false,
@@ -623,6 +652,94 @@
       {
         "netclass": "90Ω",
         "pattern": "*CON_PCIE*"
+      },
+      {
+        "netclass": "90Ω",
+        "pattern": "/PCIe x4/SATA/SATA_TX_2+"
+      },
+      {
+        "netclass": "90Ω",
+        "pattern": "/PCIe x4/SATA/SATA_TX_2-"
+      },
+      {
+        "netclass": "90Ω",
+        "pattern": "/PCIe x4/SATA/SATA_RX_2+"
+      },
+      {
+        "netclass": "90Ω",
+        "pattern": "/PCIe x4/SATA/SATA_RX_2-"
+      },
+      {
+        "netclass": "90Ω",
+        "pattern": "/PCIe x4/SATA/SATA_RX_3+"
+      },
+      {
+        "netclass": "90Ω",
+        "pattern": "/PCIe x4/SATA/SATA_RX_3-"
+      },
+      {
+        "netclass": "90Ω",
+        "pattern": "/PCIe x4/SATA/SATA_TX_3+"
+      },
+      {
+        "netclass": "90Ω",
+        "pattern": "/PCIe x4/SATA/SATA_TX_3-"
+      },
+      {
+        "netclass": "90Ω",
+        "pattern": "XI-"
+      },
+      {
+        "netclass": "90Ω",
+        "pattern": "XI+"
+      },
+      {
+        "netclass": "90Ω",
+        "pattern": "SATA3_TX+"
+      },
+      {
+        "netclass": "90Ω",
+        "pattern": "SATA3_TX-"
+      },
+      {
+        "netclass": "90Ω",
+        "pattern": "SATA3_RX-"
+      },
+      {
+        "netclass": "90Ω",
+        "pattern": "SATA3_RX+"
+      },
+      {
+        "netclass": "90Ω",
+        "pattern": "/PCIe x4/SATA/SATA_TX_4-"
+      },
+      {
+        "netclass": "90Ω",
+        "pattern": "/PCIe x4/SATA/SATA_TX_4+"
+      },
+      {
+        "netclass": "90Ω",
+        "pattern": "SATA4_TX-"
+      },
+      {
+        "netclass": "90Ω",
+        "pattern": "SATA4_TX+"
+      },
+      {
+        "netclass": "90Ω",
+        "pattern": "SATA4_RX+"
+      },
+      {
+        "netclass": "90Ω",
+        "pattern": "SATA4_RX-"
+      },
+      {
+        "netclass": "90Ω",
+        "pattern": "/PCIe x4/SATA/SATA_RX_4+"
+      },
+      {
+        "netclass": "90Ω",
+        "pattern": "/PCIe x4/SATA/SATA_RX_4-"
       }
     ]
   },
@@ -798,7 +915,7 @@
     ],
     [
       "0716e4e5-1aca-46b3-961a-42a6c1122566",
-      "PCIe x4"
+      "PCIe x4/SATA"
     ],
     [
       "b169c362-0273-44a3-bb19-0bcbad977976",
@@ -827,6 +944,10 @@
     [
       "3a597c52-640b-4e4c-bb57-6eff9e8fff95",
       "Fan_Temp"
+    ],
+    [
+      "767c368b-9cbd-4f13-ab52-729518de5ea0",
+      "BIOS"
     ]
   ],
   "text_variables": {}
