@@ -6835,6 +6835,12 @@
 		(uuid "82f395ca-5724-46c5-b423-e0c2b2645fca")
 	)
 	(junction
+		(at 368.2348 185.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "07e0347d-6c6a-4428-a5be-c2eb54c0c1fe")
+	)
+	(junction
 		(at 355.6 256.54)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7642,6 +7648,16 @@
 	)
 	(wire
 		(pts
+			(xy 368.2348 185.42) (xy 368.3 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59dd906e-13e4-40df-af8e-5903b82b87da")
+	)
+	(wire
+		(pts
 			(xy 309.88 44.45) (xy 309.88 55.88)
 		)
 		(stroke
@@ -8272,7 +8288,7 @@
 	)
 	(wire
 		(pts
-			(xy 351.79 185.42) (xy 368.3 185.42)
+			(xy 351.79 185.42) (xy 368.2348 185.42)
 		)
 		(stroke
 			(width 0)
@@ -8631,17 +8647,6 @@
 		)
 		(uuid "1d92e0e2-a965-48f1-8233-b5390b97037e")
 	)
-	(hierarchical_label "SOC_UART1_TX"
-		(shape output)
-		(at 368.3 185.42 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "1fa5dc41-c067-47c6-86e7-b79ed4707c24")
-	)
 	(hierarchical_label "I2C4_SDA"
 		(shape bidirectional)
 		(at 368.3 226.06 0)
@@ -8652,17 +8657,6 @@
 			(justify left)
 		)
 		(uuid "216f0673-f66b-489c-9a82-e12532b02226")
-	)
-	(hierarchical_label "SOC_UART0_RX"
-		(shape input)
-		(at 368.3 177.8 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "22413735-bc22-42b3-bf23-6d462585b8a5")
 	)
 	(hierarchical_label "REFCLK3-"
 		(shape output)
@@ -8938,17 +8932,6 @@
 			(justify right)
 		)
 		(uuid "59edc413-0e23-4037-9090-114711ddee11")
-	)
-	(hierarchical_label "SOC_UART1_RX"
-		(shape input)
-		(at 368.3 182.88 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "5b8f236f-884e-420f-95de-28a57d52d32b")
 	)
 	(hierarchical_label "HSIO_3_TX+"
 		(shape output)
@@ -9312,17 +9295,6 @@
 			(justify right)
 		)
 		(uuid "c9f8afc3-d236-43a1-b7cc-964421cb3f19")
-	)
-	(hierarchical_label "SOC_UART0_TX"
-		(shape output)
-		(at 368.3 180.34 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ca695a0a-ed8a-4936-a017-932722d5e47d")
 	)
 	(hierarchical_label "HSIO_2_RX-"
 		(shape input)
@@ -10529,6 +10501,196 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 368.3 180.34 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2ff0b700-eeb0-4971-bd9b-e69dfa074efe")
+		(property "Reference" "TP82"
+			(at 373.38 179.0699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 373.38 181.6099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "A_HDJ_Library:TestPoint_Pad_D1.5mm"
+			(at 368.3 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 368.3 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 368.3 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 368.3 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 368.3 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 368.3 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a6ef3e3c-2f4d-4ec5-a185-c60c20847bb0")
+		)
+		(instances
+			(project "[DFR1142]Lite Carrier for LattePanda Mu"
+				(path "/2a6d114a-7fd7-4207-b5f7-4ea9c34f36aa/6eee02c2-78c9-4e83-9ccf-e0f7690b57bf"
+					(reference "TP82")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 368.3 177.8 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "38f61be8-abd5-4583-9e7d-fc1fbe7fb792")
+		(property "Reference" "TP81"
+			(at 373.38 176.5299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 373.38 179.0699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "A_HDJ_Library:TestPoint_Pad_D1.5mm"
+			(at 368.3 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 368.3 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 368.3 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 368.3 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 368.3 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 368.3 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "15b41885-e93c-44d7-b41e-a7d7720ec718")
+		)
+		(instances
+			(project "[DFR1142]Lite Carrier for LattePanda Mu"
+				(path "/2a6d114a-7fd7-4207-b5f7-4ea9c34f36aa/6eee02c2-78c9-4e83-9ccf-e0f7690b57bf"
+					(reference "TP81")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 419.1 127 0)
 		(unit 1)
@@ -10656,6 +10818,101 @@
 			(project "[DFR1142]Lite Carrier for LattePanda Mu"
 				(path "/2a6d114a-7fd7-4207-b5f7-4ea9c34f36aa/6eee02c2-78c9-4e83-9ccf-e0f7690b57bf"
 					(reference "#PWR0120")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 368.3 182.88 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "48906028-6f53-45f8-bf79-48d19a8919d6")
+		(property "Reference" "TP83"
+			(at 373.38 181.6099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 373.38 184.1499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "A_HDJ_Library:TestPoint_Pad_D1.5mm"
+			(at 368.3 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 368.3 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 368.3 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 368.3 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 368.3 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 368.3 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "66a76594-625a-46dd-9bfc-e219b20308e4")
+		)
+		(instances
+			(project "[DFR1142]Lite Carrier for LattePanda Mu"
+				(path "/2a6d114a-7fd7-4207-b5f7-4ea9c34f36aa/6eee02c2-78c9-4e83-9ccf-e0f7690b57bf"
+					(reference "TP83")
 					(unit 1)
 				)
 			)
@@ -12222,6 +12479,101 @@
 			(project "[DFR1142]Lite Carrier for LattePanda Mu"
 				(path "/2a6d114a-7fd7-4207-b5f7-4ea9c34f36aa/6eee02c2-78c9-4e83-9ccf-e0f7690b57bf"
 					(reference "H5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 368.2348 185.42 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cba2bb17-eec6-4202-bdda-928b05c7ec87")
+		(property "Reference" "TP84"
+			(at 373.3148 184.1499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 373.3148 186.6899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "A_HDJ_Library:TestPoint_Pad_D1.5mm"
+			(at 368.2348 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 368.2348 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 368.2348 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 368.2348 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 368.2348 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 368.2348 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "64b1c63a-e155-4339-a344-4e9fcea6310c")
+		)
+		(instances
+			(project "[DFR1142]Lite Carrier for LattePanda Mu"
+				(path "/2a6d114a-7fd7-4207-b5f7-4ea9c34f36aa/6eee02c2-78c9-4e83-9ccf-e0f7690b57bf"
+					(reference "TP84")
 					(unit 1)
 				)
 			)
