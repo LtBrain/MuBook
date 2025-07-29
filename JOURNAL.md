@@ -129,7 +129,35 @@ I had to do this a lot of times because adding the return vias in such a dense a
 
 (Time: 5 Hrs)
 
+2025-07-27
+---
+
+Did all of the stuff neccessary for the 4x SATA ports! This involved finalizing the the ASM1061 chip support components, and then I had to reroute the SATA ports that branched off of the HSIO because I had misread the pinouts for the data lines in SATA and thought it was + - + - when it was in fact + - - +.  
+
+Redone SATA:  
+  
+
+<img width="685" height="460" alt="image" src="https://github.com/user-attachments/assets/3e413c63-f255-411f-b15b-80c7270bdcaa" />  
+  
+The ASM1061 was similar to a STM32 microcontroller in terms of how I designed around it. It required a 20 MHZ external clock and very similar power decoupling. Here's the schematic:  
+
+<img width="950" height="581" alt="image" src="https://github.com/user-attachments/assets/6afde024-2995-44a9-8faa-5403877e29dc" />  
+  
+The PCIe was quite easy to implement just because I had scrapped the PCIe connector design, and could just recycle the HSIO/PCIe lane and the REFCLK for the IC. The IC was actually relatively easy to implement, all of the pins were arranged in a way that made routing very very easy, but the main problem I had begun to run into was just avoiding boxing myself in. A secondary thing that was really annoying was just that the datasheets were very hard to come by, but I managed to find one on a random website and follow the pinout to design the schematics. However, this design was way better and less cluttered than the ones I thought would occur, especially with my designs with a more advanced ASM1166 or a Marvell chip.  
+  
+PCB:  
+<img width="600" height="490" alt="image" src="https://github.com/user-attachments/assets/26c42777-8826-47f6-9db6-f526fc565b7c" />  
+
+With both the Mu's integrated SATA and my external PCIe SATA bridge designed, the board now has 4 SATA III ports, but is missing power. For the sake of simplicity, I might just use an external supply for this as I am not too well-versed in designing for these relatively high amperage situations. I also did some analysis of my current power budget, and I am pretty sure that as of right now, the board won't be able to provide enough current to 4 drives running at the same time, and especially not when they all spin up at the same time.  
+
+I did do some research, and there might be a way to fix this issue by just having many regulators to distribute the stress that so much current would put on my system, but I would want to do some more research to make sure the system will maintain stability.  
+  
+(Time: 7 Hrs)
 
 
- 
+
+
+
+
+
 
