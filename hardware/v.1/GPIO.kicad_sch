@@ -2169,7 +2169,7 @@
 		)
 		(uuid "23f4f2c4-822a-49f5-b5e1-14c605285691")
 	)
-	(label "SOC_UART0_TX"
+	(label "SOC_UART1_TX"
 		(at 302.26 226.06 0)
 		(effects
 			(font
@@ -2199,7 +2199,7 @@
 		)
 		(uuid "41f71bcd-34c5-479b-9eb9-385e0a01c51d")
 	)
-	(label "SOC_UART1_TX"
+	(label "SOC_UART0_TX"
 		(at 302.26 228.6 0)
 		(effects
 			(font
@@ -2259,7 +2259,7 @@
 		)
 		(uuid "652db838-8d52-46d0-8a30-6c1c7423b34b")
 	)
-	(label "SOC_UART0_TX"
+	(label "SOC_UART1_TX"
 		(at 289.56 242.57 0)
 		(effects
 			(font
@@ -2269,7 +2269,7 @@
 		)
 		(uuid "6543ca28-a8d9-4775-a209-56e07afd681d")
 	)
-	(label "SOC_UART1_RX"
+	(label "SOC_UART2_RX"
 		(at 218.44 252.73 0)
 		(effects
 			(font
@@ -2279,7 +2279,7 @@
 		)
 		(uuid "6942c5ae-752a-4144-9982-da988f6b982b")
 	)
-	(label "SOC_UART1_TX"
+	(label "SOC_UART1_RX"
 		(at 289.56 252.73 0)
 		(effects
 			(font
@@ -2319,7 +2319,7 @@
 		)
 		(uuid "a60bbfef-ad1b-4506-b6ec-331e4e9b637b")
 	)
-	(label "SOC_UART0_RX"
+	(label "SOC_UART1_RX"
 		(at 231.14 226.06 0)
 		(effects
 			(font
@@ -2359,7 +2359,7 @@
 		)
 		(uuid "bf1d7fb9-649a-479c-af02-9634ed70b08d")
 	)
-	(label "SOC_UART1_RX"
+	(label "SOC_UART0_RX"
 		(at 231.14 228.6 0)
 		(effects
 			(font
@@ -2369,7 +2369,7 @@
 		)
 		(uuid "c05f3597-800f-412d-9778-d4718e35fea6")
 	)
-	(label "SOC_UART2_RX"
+	(label "SOC_UART2_TX"
 		(at 264.16 242.57 0)
 		(effects
 			(font
@@ -2389,7 +2389,7 @@
 		)
 		(uuid "d176bf10-bbef-4da8-851f-ffa5e325819c")
 	)
-	(label "SOC_UART2_TX"
+	(label "SOC_UART0_TX"
 		(at 335.28 242.57 0)
 		(effects
 			(font
@@ -2419,7 +2419,7 @@
 		)
 		(uuid "e1941091-6a3f-4e73-8664-dc99d5a3d9a8")
 	)
-	(hierarchical_label "SOC_UART0_TX"
+	(hierarchical_label "SOC_UART1_TX"
 		(shape output)
 		(at 344.17 226.06 0)
 		(effects
@@ -2430,7 +2430,7 @@
 		)
 		(uuid "00eb297b-824a-4d94-9daa-cb50bd9ff82a")
 	)
-	(hierarchical_label "SOC_UART1_RX"
+	(hierarchical_label "SOC_UART0_RX"
 		(shape output)
 		(at 266.7 228.6 0)
 		(effects
@@ -2474,7 +2474,7 @@
 		)
 		(uuid "343f70fd-b22f-47f3-ac08-9d2f5e856e70")
 	)
-	(hierarchical_label "SOC_UART0_RX"
+	(hierarchical_label "SOC_UART1_RX"
 		(shape output)
 		(at 266.7 226.06 0)
 		(effects
@@ -2529,7 +2529,7 @@
 		)
 		(uuid "9d45141f-d21b-4b82-b249-76751de04395")
 	)
-	(hierarchical_label "SOC_UART1_TX"
+	(hierarchical_label "SOC_UART0_TX"
 		(shape output)
 		(at 344.17 228.6 0)
 		(effects
