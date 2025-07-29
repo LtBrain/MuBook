@@ -6,7 +6,8 @@ MuBook is a x86 portable board which is designed around the LattePanda Mu and ha
 2025-07-12
 --- 
 Create the basic board, work out some I/O choices.  
-
+I'm going off of the Mu's lite carrier project schematic file right now, but will modify a pretty good amount of the IO. Several people in the Lattepanda Mu Discord recommended this route to me because it takes a lot of the guesswork out of the design process, especially with how the HSIO will need to be broken out from the SODIMM. I plan to completely redesign the PCB for my usage though.  
+  
 USB 3.0 ---- 2 Ports  (7/13 - 7/16, had some issues with KiCad diff pairs)  
 USB 2.0 ---- 2 Ports  (Front IO not done yet)  
 1 GBE Ethernet  
@@ -92,3 +93,95 @@ Also managed to get rid of all of the back I/O DRC faults and somewhat work out 
 The board is now approximately 170 cm x 140 cm.
 
 (Time: 6 Hrs)
+
+2025-07-25
+---
+
+Today, I added 2 USB-C ports at 2.0 speeds for the front IO, using the HSIO 3 and 5 pins because they were the most exposed ones that I could access without having to reroute the entire chunk of diff pairs.  
+
+<img width="985" height="462" alt="image" src="https://github.com/user-attachments/assets/a7a13cda-b499-4b4c-8a7a-43725b849dd4" />  
+
+Had missed a day because I was doing a lot of PSAT practice, but all of the basic, bare minimum IO is finally in place, so the last thing I need to do is do the SATA schematics and PCB design:  
+  
+<img width="497" height="388" alt="image" src="https://github.com/user-attachments/assets/bb276bca-b48b-49c6-b114-acde52196e91" />  
+  
+I also wired up the reset and power pushbuttons, and will probably add a SPI flash chip as my secondary BIOS chip just so I can use the SATA bios without the risk of bricking the MU.  
+
+I am also probably going to hand assemble this as JLCPCB assembly + tariffs has made it insanely expensive (more than 300 USD), but the components are only around 30 dollars and I would only need a hotplate with solderpaste.  
+  
+
+(Time: 3 Hrs)
+
+2025-07-26
+---
+
+Added 2 USB 2.0 ports to the front IO bay, transitioned the HSIO 10 and 11 traces from the Mu into 2 SATA lines. This involves the unfortunate sacrifice of 2 of my PCIe lanes on the slot, so I'm just going to design without this slot because a PCIe 3.0 x2 is not very common, and I might as well just use those 2 lanes for 2 more SATA plugs with the use of an ASM1061 PCIe to SATA bridge IC. However, these are quite rare, so I had to find some on AliExpress, and extract the symbol and footprint from an EasyEDA file.  
+  
+<img width="845" height="441" alt="image" src="https://github.com/user-attachments/assets/c80dcb5d-0643-4674-ad8b-0ce84f4094c1" />  
+Base setup for the ASM1061  
+  
+I went for the ASM1061 instead of some more common chips like the Marvell ones because it would be vastly easier to design for a 48 pin IC than a 76 pin IC, and much easier to assemble, especially because I plan to assemble this board by myself. The ASM1061 is a 1 lane PCIe to 2x SATA chip, so in total, this design will get 4 SATA ports. It also has an option of adding a SPI flash chip for custom firmware, but I will probaby skip this because I don't plan on using that feature for complexity reasons.  
+
+I also got some advice to reroute my extremely dense breakout of high-speed traces and add return vias to where they switched layers to avoid some pretty nasty impedance issues:  
+<img width="381" height="530" alt="image" src="https://github.com/user-attachments/assets/420a9b9d-b1ff-4db3-80a7-8b01cde42e65" />  
+  
+I had to do this a lot of times because adding the return vias in such a dense area would have cut some traces, and JLC doesn't offer blind vias. Also, KiCAD decided to reset all of my progress on this section of the board a couple times by closing itself out.  
+
+(Time: 5 Hrs)
+
+2025-07-27
+---
+
+Did all of the stuff neccessary for the 4x SATA ports! This involved finalizing the the ASM1061 chip support components, and then I had to reroute the SATA ports that branched off of the HSIO because I had misread the pinouts for the data lines in SATA and thought it was + - + - when it was in fact + - - +.  
+
+Redone SATA:  
+  
+
+<img width="685" height="460" alt="image" src="https://github.com/user-attachments/assets/3e413c63-f255-411f-b15b-80c7270bdcaa" />  
+  
+The ASM1061 was similar to a STM32 microcontroller in terms of how I designed around it. It required a 20 MHZ external clock and very similar power decoupling. Here's the schematic:  
+
+<img width="950" height="581" alt="image" src="https://github.com/user-attachments/assets/6afde024-2995-44a9-8faa-5403877e29dc" />  
+  
+The PCIe was quite easy to implement just because I had scrapped the PCIe connector design, and could just recycle the HSIO/PCIe lane and the REFCLK for the IC. The IC was actually relatively easy to implement, all of the pins were arranged in a way that made routing very very easy, but the main problem I had begun to run into was just avoiding boxing myself in. A secondary thing that was really annoying was just that the datasheets were very hard to come by, but I managed to find one on a random website and follow the pinout to design the schematics. However, this design was way better and less cluttered than the ones I thought would occur, especially with my designs with a more advanced ASM1166 or a Marvell chip.  
+  
+PCB:  
+<img width="600" height="490" alt="image" src="https://github.com/user-attachments/assets/26c42777-8826-47f6-9db6-f526fc565b7c" />  
+
+With both the Mu's integrated SATA and my external PCIe SATA bridge designed, the board now has 4 SATA III ports, but is missing power. For the sake of simplicity, I might just use an external supply for this as I am not too well-versed in designing for these relatively high amperage situations. I also did some analysis of my current power budget, and I am pretty sure that as of right now, the board won't be able to provide enough current to 4 drives running at the same time, and especially not when they all spin up at the same time.  
+
+I did do some research, and there might be a way to fix this issue by just having many regulators to distribute the stress that so much current would put on my system, but I would want to do some more research to make sure the system will maintain stability.  
+  
+(Time: 7 Hrs)
+
+2025-07-28
+---
+
+I'm so really close to finishing the PCB. Today I routed the secondary BIOS chip (and had to make a new hierarchal sheet because KiCad keeps crashing on me when I do it elsewhere for some reason). The chip I chose was the WinBond W25Q128, which should have enough capacity to store the LattePanda's SATA bios. Having a secondary BIOS is important in my case because the board will need this SATA bios, but I don't want to risk tampering with the original, on board LattePanda bios, just in case I need to recover the device and not turn it into an expensive paperweight. In this way, I can keep the known, working bios as well as use the SATA features without risk. Changing the bios is accomplished with a pin header I put on the board. Pulling it to ground will select the onboard bios, pulling it high will do the opposite.  
+  
+<img width="873" height="560" alt="image" src="https://github.com/user-attachments/assets/17a9a3ac-2ac6-431a-8437-2174ee71d86a" />
+  
+<img width="603" height="475" alt="image" src="https://github.com/user-attachments/assets/50cd94f2-596f-473d-b8e6-c1bebca5f94e" />  
+  
+Although the schematic was nice and simple, the PCB routing was anything but that. Because the chip uses QSPI, and is relatively critical to the board actually function on boot up, the traces had to be quite close in length. This led to the pretty crazy traces that are there, because I also had to fix crossover of the left side. After I had gotten that sorted out (after like 2 hours of me deleting it and starting over), I settled on the current design. Then I went to do the pin header to control the BIOS, and ended up with a design somewhat like this:  
+  
+<img width="625" height="493" alt="image" src="https://github.com/user-attachments/assets/1cac220c-48a3-47c7-aaf4-fc686e2b6567" />  
+  
+After I finished with the BIOS, I could move onto the last pin headers. These are just some pins that carry UART and I2C as well as 3v3 power. This is just nice to have if I were to mount some sensors on this board. The important thing about this part was just that the UART just gave me the ability to debug my board when it breaks with a standard debugging tool.  
+  
+GPIO Headers:  
+<img width="136" height="585" alt="image" src="https://github.com/user-attachments/assets/b2f79454-6f1c-482b-a39a-99fdfe0157d1" />  
+<img width="413" height="669" alt="image" src="https://github.com/user-attachments/assets/f93bc326-7626-4691-a407-d6baaca9bd85" />  
+  
+This is 99 percent of my PCB design done, so I essentially went back in and did some DRC checks. I started with 160 today, but managed to whittle it down to just 18 connection errors. This is mostly attributed to my really bad labeling skills, so I have to go back in to fix those. It did throw some errors that my SATA IC was in the courtyard of the Mu, but I just excluded these violations because the SODIMM gives enough clearance. 
+  
+<img width="871" height="660" alt="image" src="https://github.com/user-attachments/assets/5ac0dedc-6270-41e5-9f81-eb64b44c2cfa" />
+
+(Time: 5 Hrs)
+
+
+
+
+
+
+
