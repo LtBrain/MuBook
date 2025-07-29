@@ -154,6 +154,30 @@ I did do some research, and there might be a way to fix this issue by just havin
   
 (Time: 7 Hrs)
 
+2025-07-28
+---
+
+I'm so really close to finishing the PCB. Today I routed the secondary BIOS chip (and had to make a new hierarchal sheet because KiCad keeps crashing on me when I do it elsewhere for some reason). The chip I chose was the WinBond W25Q128, which should have enough capacity to store the LattePanda's SATA bios. Having a secondary BIOS is important in my case because the board will need this SATA bios, but I don't want to risk tampering with the original, on board LattePanda bios, just in case I need to recover the device and not turn it into an expensive paperweight. In this way, I can keep the known, working bios as well as use the SATA features without risk. Changing the bios is accomplished with a pin header I put on the board. Pulling it to ground will select the onboard bios, pulling it high will do the opposite.  
+  
+<img width="873" height="560" alt="image" src="https://github.com/user-attachments/assets/17a9a3ac-2ac6-431a-8437-2174ee71d86a" />
+  
+<img width="603" height="475" alt="image" src="https://github.com/user-attachments/assets/50cd94f2-596f-473d-b8e6-c1bebca5f94e" />  
+  
+Although the schematic was nice and simple, the PCB routing was anything but that. Because the chip uses QSPI, and is relatively critical to the board actually function on boot up, the traces had to be quite close in length. This led to the pretty crazy traces that are there, because I also had to fix crossover of the left side. After I had gotten that sorted out (after like 2 hours of me deleting it and starting over), I settled on the current design. Then I went to do the pin header to control the BIOS, and ended up with a design somewhat like this:  
+  
+<img width="625" height="493" alt="image" src="https://github.com/user-attachments/assets/1cac220c-48a3-47c7-aaf4-fc686e2b6567" />  
+  
+After I finished with the BIOS, I could move onto the last pin headers. These are just some pins that carry UART and I2C as well as 3v3 power. This is just nice to have if I were to mount some sensors on this board. The important thing about this part was just that the UART just gave me the ability to debug my board when it breaks with a standard debugging tool.  
+  
+GPIO Headers:  
+<img width="136" height="585" alt="image" src="https://github.com/user-attachments/assets/b2f79454-6f1c-482b-a39a-99fdfe0157d1" />  
+<img width="413" height="669" alt="image" src="https://github.com/user-attachments/assets/f93bc326-7626-4691-a407-d6baaca9bd85" />  
+  
+This is 99 percent of my PCB design done, so I essentially went back in and did some DRC checks. I started with 160 today, but managed to whittle it down to just 18 connection errors. This is mostly attributed to my really bad labeling skills, so I have to go back in to fix those. It did throw some errors that my SATA IC was in the courtyard of the Mu, but I just excluded these violations because the SODIMM gives enough clearance. 
+  
+<img width="871" height="660" alt="image" src="https://github.com/user-attachments/assets/5ac0dedc-6270-41e5-9f81-eb64b44c2cfa" />
+
+(Time: 5 Hrs)
 
 
 
