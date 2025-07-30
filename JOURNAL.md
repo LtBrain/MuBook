@@ -177,7 +177,45 @@ This is 99 percent of my PCB design done, so I essentially went back in and did 
   
 <img width="871" height="660" alt="image" src="https://github.com/user-attachments/assets/5ac0dedc-6270-41e5-9f81-eb64b44c2cfa" />
 
-(Time: 5 Hrs)
+(Time: 5 Hrs)  
+  
+2025-07-29
+---
+
+Today was not particularly fun. On the positive side, my board got reviewed by the folks in the Lattepanda discord, and I was able to fix most of the issues regarding interrupted ground pours and just the overall clutter near my HSIO traces. It started with this: <img width="539" height="329" alt="image" src="https://github.com/user-attachments/assets/68d823cb-ed90-4474-978d-c71c59ba892a" />  
+  
+And finished with this:  <img width="675" height="564" alt="image" src="https://github.com/user-attachments/assets/a622c479-3171-4b01-a0a3-e507da683fe6" />  
+
+The things that were pointed out in review were focused upon how my VDC plane would have a lot of blocked pathways to reach my power supply pins on the SODIMM, and that was fixed by moving my 5V and 3V3 rails to the outer edge of the PCB so that the central area could carry the VDC power. One of the most annoying issues was that I was forced to route my I2C and UART lines in the internal planes yesterday, but that interrupted a lot of the ground plane under the HSIO traces, which could cause some serious signal loss. To remedy this, I essentially had to shift them to the center of my board, rather than to the side, ending up with a design like this: <img width="359" height="520" alt="image" src="https://github.com/user-attachments/assets/3335d83c-2ef0-4afb-b37f-b8ad7f317b25" />  
+  
+I had originally started with this mess:  
+<img width="1126" height="603" alt="image" src="https://github.com/user-attachments/assets/eccb9c57-cada-4a7d-9946-17e8d8151e5a" />  
+
+The unfortunate thing about having to route it this alternate way is that I would have to drop 2 out of 3 UART headers and a I2C bus. This was definitely worth it in my opinion because it was way too much complication and risk to route these lines without interrupting more important systems on the board, and I wasn't really sure that I would even use these interfaces that much. This routing method allowed me to bypass all of those high-speed lines and only cross over lower frequency data lines (such as the USB 2.0 lines), and just some basic utility pins coming from the M.2 slots. This was a much better deal than the hit or miss situation that I had before.  
+  
+In addition to that, my USB C port was originally set to receive power with its pull down configuration on the CC pins. This was the opposite of what I wanted, so I had to change the 5.1k value to 22k and pull the pins up so they acted as a power source for any peripheral attached.  
+<img width="1030" height="586" alt="image" src="https://github.com/user-attachments/assets/24a4e1df-3de5-45ba-859c-9dc181cf0135" />  
+
+I also split my power layer into 2 sections, VDC for the top section so that the buck converters and Mu could be supplied effectively, and a ground layer below the SODIMM to minimize EMI on the back layer:  
+<img width="918" height="612" alt="image" src="https://github.com/user-attachments/assets/e6b763f9-0e36-4b81-8f9e-c74f395bae7f" />  
+
+A final thing I did today was make all of the designators on the PCB clear so that I wouldn't have a very hard time assembling the board by hand, and could easily figure out what part goes where. I did this with the aid of the 3D viewer in KiCad, which displayed my progress so that I didn't have to imagine based on the PCB editor:  
+
+<img width="718" height="454" alt="image" src="https://github.com/user-attachments/assets/8a328193-d845-4c1d-8470-448691b3984f" />  
+  
+I also began looking at the rough price on JLCPCB, and because my design uses lots of .2 mm vias, I had to go with that more expensive route. This was done because it was just better suited for high speed design and the density of my current traces than .3 mm, and retrofitting .3 mm vias was definitely not an option as that would screw up a lot of my high speed lanes and the ground traces that run alongside.  
+  
+Special thanks to WifiCable who reviewed my board when it was like 2 AM where they were!  
+  
+(Time: 7 Hrs)
+
+
+
+
+
+
+
+
 
 
 
