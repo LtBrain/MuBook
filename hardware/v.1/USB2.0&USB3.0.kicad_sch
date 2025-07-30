@@ -3151,6 +3151,12 @@
 		(uuid "713b56f1-4d1f-4cac-a4b0-af43fd741074")
 	)
 	(junction
+		(at 317.5 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "763f335a-4125-44d2-bc6d-de6670a3751f")
+	)
+	(junction
 		(at 184.15 266.7)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3167,6 +3173,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "97b077e7-b740-4bd8-9230-f01dfe3fd72a")
+	)
+	(junction
+		(at 317.5 30.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a1c5ffb0-e9e8-4615-a621-23d8bd8a8878")
 	)
 	(junction
 		(at 173.99 266.7)
@@ -3401,6 +3413,16 @@
 			(type default)
 		)
 		(uuid "29f9c6bf-ee34-45c2-9489-e2687fcb91a8")
+	)
+	(wire
+		(pts
+			(xy 317.5 90.17) (xy 317.5 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d7d9a90-384c-4eb6-b5b9-043b500ca0da")
 	)
 	(wire
 		(pts
@@ -3871,6 +3893,16 @@
 			(type default)
 		)
 		(uuid "af75a95c-47ab-4497-9ee4-b9f1f3809cbe")
+	)
+	(wire
+		(pts
+			(xy 317.5 30.48) (xy 317.5 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "afd98ced-ea1e-4816-b6f3-3456d9162b03")
 	)
 	(wire
 		(pts
@@ -4829,6 +4861,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 317.5 30.48 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "078e7ea8-489d-4285-9396-caae0ba6129b")
+		(property "Reference" "#PWR0105"
+			(at 321.31 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 313.69 30.4799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 317.5 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 317.5 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 317.5 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "901b9450-03aa-4179-8435-652bc9b85c67")
+		)
+		(instances
+			(project "[DFR1142]Lite Carrier for LattePanda Mu"
+				(path "/2a6d114a-7fd7-4207-b5f7-4ea9c34f36aa/f9aa04f2-8362-4e9f-9e54-e2b1a8ec9b0a"
+					(reference "#PWR0105")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 289.56 181.61 270)
 		(unit 1)
@@ -4956,140 +5054,6 @@
 			(project "[DFR1142]Lite Carrier for LattePanda Mu"
 				(path "/2a6d114a-7fd7-4207-b5f7-4ea9c34f36aa/f9aa04f2-8362-4e9f-9e54-e2b1a8ec9b0a"
 					(reference "#PWR033")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 317.5 33.02 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "14bb4ee6-0e42-410b-8720-0c975a1d8afe")
-		(property "Reference" "#PWR0105"
-			(at 311.15 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 313.69 33.02 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 317.5 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 317.5 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 317.5 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1375bd52-ef7a-4563-9cd3-2f021f2dbe32")
-		)
-		(instances
-			(project "[DFR1142]Lite Carrier for LattePanda Mu"
-				(path "/2a6d114a-7fd7-4207-b5f7-4ea9c34f36aa/f9aa04f2-8362-4e9f-9e54-e2b1a8ec9b0a"
-					(reference "#PWR0105")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 317.5 30.48 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "16de9455-ef55-4a60-97d4-b0e822a00f3f")
-		(property "Reference" "#PWR0121"
-			(at 311.15 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 313.69 30.48 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 317.5 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 317.5 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 317.5 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1f6ef9a1-0ddb-4077-9aca-c8ceca5761bb")
-		)
-		(instances
-			(project "[DFR1142]Lite Carrier for LattePanda Mu"
-				(path "/2a6d114a-7fd7-4207-b5f7-4ea9c34f36aa/f9aa04f2-8362-4e9f-9e54-e2b1a8ec9b0a"
-					(reference "#PWR0121")
 					(unit 1)
 				)
 			)
@@ -5438,7 +5402,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "2a03e614-129f-4a20-9c40-5362ae37caf3")
 		(property "Reference" "R80"
 			(at 321.31 24.13 90)
@@ -5448,8 +5411,8 @@
 				)
 			)
 		)
-		(property "Value" "5.1K"
-			(at 321.31 26.67 90)
+		(property "Value" "22K"
+			(at 321.31 30.48 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6208,7 +6171,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "5c075876-3aa9-44af-a8ee-0a02d7205e13")
 		(property "Reference" "R81"
 			(at 321.31 26.67 90)
@@ -6218,8 +6180,8 @@
 				)
 			)
 		)
-		(property "Value" "5.1K"
-			(at 321.31 29.21 90)
+		(property "Value" "22K"
+			(at 321.056 32.766 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7009,73 +6971,6 @@
 			(project "[DFR1142]Lite Carrier for LattePanda Mu"
 				(path "/2a6d114a-7fd7-4207-b5f7-4ea9c34f36aa/f9aa04f2-8362-4e9f-9e54-e2b1a8ec9b0a"
 					(reference "F81")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 317.5 92.71 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6c17bfb7-bc16-47ae-af5c-e2bfed0dc2e6")
-		(property "Reference" "#PWR0127"
-			(at 311.15 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 313.69 92.71 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 317.5 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 317.5 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 317.5 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5fa49830-6f38-4ef9-92d2-0b01b88e8dc1")
-		)
-		(instances
-			(project "[DFR1142]Lite Carrier for LattePanda Mu"
-				(path "/2a6d114a-7fd7-4207-b5f7-4ea9c34f36aa/f9aa04f2-8362-4e9f-9e54-e2b1a8ec9b0a"
-					(reference "#PWR0127")
 					(unit 1)
 				)
 			)
@@ -8284,7 +8179,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "a527c7e3-513c-4d3a-976b-cfded9a58b8e")
 		(property "Reference" "R82"
 			(at 321.31 83.82 90)
@@ -8294,8 +8188,8 @@
 				)
 			)
 		)
-		(property "Value" "5.1K"
-			(at 321.31 86.36 90)
+		(property "Value" "22K"
+			(at 321.31 90.17 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8640,73 +8534,6 @@
 			(project "[DFR1142]Lite Carrier for LattePanda Mu"
 				(path "/2a6d114a-7fd7-4207-b5f7-4ea9c34f36aa/f9aa04f2-8362-4e9f-9e54-e2b1a8ec9b0a"
 					(reference "C28")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 317.5 90.17 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c85db0fb-863c-4792-96ce-178de0a839e0")
-		(property "Reference" "#PWR0126"
-			(at 311.15 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 313.69 90.17 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 317.5 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 317.5 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 317.5 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6f4eb321-1eb2-407e-b9af-632300ae3106")
-		)
-		(instances
-			(project "[DFR1142]Lite Carrier for LattePanda Mu"
-				(path "/2a6d114a-7fd7-4207-b5f7-4ea9c34f36aa/f9aa04f2-8362-4e9f-9e54-e2b1a8ec9b0a"
-					(reference "#PWR0126")
 					(unit 1)
 				)
 			)
@@ -9354,7 +9181,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "e1d12431-5ed3-44b1-af0b-ba81f466b4c6")
 		(property "Reference" "R83"
 			(at 321.31 86.36 90)
@@ -9364,8 +9190,8 @@
 				)
 			)
 		)
-		(property "Value" "5.1K"
-			(at 321.31 88.9 90)
+		(property "Value" "22K"
+			(at 321.31 92.71 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10015,6 +9841,73 @@
 			(project "[DFR1142]Lite Carrier for LattePanda Mu"
 				(path "/2a6d114a-7fd7-4207-b5f7-4ea9c34f36aa/f9aa04f2-8362-4e9f-9e54-e2b1a8ec9b0a"
 					(reference "#PWR039")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 317.5 92.71 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fb2dc681-8dbf-40d1-a98b-c1d39c600cf6")
+		(property "Reference" "#PWR0126"
+			(at 321.31 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 313.69 92.7099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 317.5 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 317.5 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 317.5 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "759fbed2-5544-4242-a321-d082b3fb5cb9")
+		)
+		(instances
+			(project "[DFR1142]Lite Carrier for LattePanda Mu"
+				(path "/2a6d114a-7fd7-4207-b5f7-4ea9c34f36aa/f9aa04f2-8362-4e9f-9e54-e2b1a8ec9b0a"
+					(reference "#PWR0126")
 					(unit 1)
 				)
 			)

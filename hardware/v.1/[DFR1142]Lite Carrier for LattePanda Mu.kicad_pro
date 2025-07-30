@@ -227,7 +227,8 @@
         0.25,
         0.3,
         0.4,
-        1.0
+        1.0,
+        1.5
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -263,6 +264,14 @@
         {
           "diameter": 0.4,
           "drill": 0.2
+        },
+        {
+          "diameter": 0.4,
+          "drill": 0.3
+        },
+        {
+          "diameter": 0.5,
+          "drill": 0.3
         }
       ],
       "zones_allow_external_fillets": false
@@ -527,8 +536,8 @@
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
-        "via_diameter": 0.4,
-        "via_drill": 0.2,
+        "via_diameter": 0.5,
+        "via_drill": 0.3,
         "wire_width": 6
       },
       {
@@ -544,8 +553,8 @@
         "priority": 0,
         "schematic_color": "rgb(105, 87, 255)",
         "track_width": 0.1204,
-        "via_diameter": 0.4,
-        "via_drill": 0.2,
+        "via_diameter": 0.5,
+        "via_drill": 0.3,
         "wire_width": 6
       },
       {
@@ -561,8 +570,8 @@
         "priority": 1,
         "schematic_color": "rgb(255, 120, 121)",
         "track_width": 0.1704,
-        "via_diameter": 0.4,
-        "via_drill": 0.2,
+        "via_diameter": 0.5,
+        "via_drill": 0.3,
         "wire_width": 6
       },
       {
@@ -578,8 +587,8 @@
         "priority": 2,
         "schematic_color": "rgb(255, 15, 0)",
         "track_width": 0.2,
-        "via_diameter": 0.4,
-        "via_drill": 0.2,
+        "via_diameter": 0.5,
+        "via_drill": 0.3,
         "wire_width": 6
       }
     ],
@@ -740,7 +749,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "./",
+      "plot": "production2/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "[DFR1142]Lite Carrier for LattePanda Mu.step",
