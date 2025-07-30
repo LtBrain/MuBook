@@ -203,6 +203,8 @@ A final thing I did today was make all of the designators on the PCB clear so th
 
 <img width="718" height="454" alt="image" src="https://github.com/user-attachments/assets/8a328193-d845-4c1d-8470-448691b3984f" />  
   
+I also began looking at the rough price on JLCPCB, and because my design uses lots of .2 mm vias, I had to go with that more expensive route. This was done because it was just better suited for high speed design and the density of my current traces than .3 mm, and retrofitting .3 mm vias was definitely not an option as that would screw up a lot of my high speed lanes and the ground traces that run alongside.  
+  
 Special thanks to WifiCable who reviewed my board when it was like 2 AM where they were!  
   
 (Time: 7 Hrs)
