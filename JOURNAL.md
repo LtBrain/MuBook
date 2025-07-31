@@ -209,10 +209,29 @@ Special thanks to WifiCable who reviewed my board when it was like 2 AM where th
   
 (Time: 7 Hrs)
 
+2025-07-30
+---
+
+CAD work and getting the project ready for submission was the primary focus of today, as my PCB was pending a second review (thanks to 0xArya). The case that I'm designing uses honeycomb vents just so it would be easier to print in 1 piece while still providing adequate cooling to the Mu inside. I opted for a rather simple design, especially with the areas around the IO port because I plan to cut my own IO shields out to make the case more seamless. 
 
 
+<img width="3296" height="2547" alt="maincase" src="https://github.com/user-attachments/assets/b103d9f9-6a37-4e84-9f46-ced15d9cd50c" />  
+  
+The simplicity of this design makes it a lot easier to design modular parts that could be added later, such as a housing for a 4 bay NAS. The case was designed to use screws which go through the entirity of the case and are secured by nuts, so it would be much easier to mount case parts directly on top of or below the MuBook if I ever wanted to in the future.  
 
+I went with 2 vent areas on the front and the side because that would give me the ability to have an exhaust and intake which draws area directly over the Mu as well as over my power circuitry and Ethernet IC. This would be extremely beneficial, especially to the buck converters as overheating them can cause some pretty bad damage to the chip itself. This design also draws air right over both M.2 slots, cooling any thermally intensive expansions to the board.  
+  
+Planned airflow:  
+<img width="884" height="587" alt="image" src="https://github.com/user-attachments/assets/7fddfa19-ce19-4099-9264-87f4b789051d" />  
 
+Finally, I added a 40mm fan to the side vent to act as an exhaust fan which pulls air throughout the case to cool the entire system. It is purely optional but I think it can definitely benefit the thermals of the board, especially when it is under heavy load.  
+  
+On the PCB aspect of things, several things were changed from the review. The VDC pour is now a lot more streamlined and avoids a lot of the differential pairs that are routed outwards from the SODIMM connector, and the buck converters have a better flow of electricity. In addition to this, the board has been switched from .4mm/.2mm vias to .4mm/.3mm vias to save approximately 30 dollars + the additional US tariffs. All DRC errors have also been patched and more ground return vias were added to keep the internal ground layers and external ones closer.  
+<img width="1214" height="473" alt="image" src="https://github.com/user-attachments/assets/0b137e80-e614-4607-87da-9f77a4d89703" />
+  
+I also added some nice silkscreen touches to the board just for aesthetics.  
+
+(Time: 5 Hrs)
 
 
 
