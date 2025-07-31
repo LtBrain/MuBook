@@ -12402,7 +12402,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "A_HDJ_Library:MountingHole_3mm_M2_Pad_TopOnly"
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad"
 			(at 414.02 299.72 0)
 			(effects
 				(font
@@ -13020,7 +13020,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "A_HDJ_Library:MountingHole_3mm_M2_Pad_TopOnly"
+		(property "Footprint" "MountingHole_2.2mm_M2_DIN965_Pad"
 			(at 439.42 299.72 0)
 			(effects
 				(font
