@@ -6835,12 +6835,6 @@
 		(uuid "82f395ca-5724-46c5-b423-e0c2b2645fca")
 	)
 	(junction
-		(at 368.2348 185.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "07e0347d-6c6a-4428-a5be-c2eb54c0c1fe")
-	)
-	(junction
 		(at 355.6 256.54)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7648,16 +7642,6 @@
 	)
 	(wire
 		(pts
-			(xy 368.2348 185.42) (xy 368.3 185.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "59dd906e-13e4-40df-af8e-5903b82b87da")
-	)
-	(wire
-		(pts
 			(xy 309.88 44.45) (xy 309.88 55.88)
 		)
 		(stroke
@@ -8288,7 +8272,7 @@
 	)
 	(wire
 		(pts
-			(xy 351.79 185.42) (xy 368.2348 185.42)
+			(xy 351.79 185.42) (xy 368.3 185.42)
 		)
 		(stroke
 			(width 0)
@@ -10529,7 +10513,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "A_HDJ_Library:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "A_HDJ_Library:TestPoint_Pad_D1.0mm"
 			(at 368.3 185.42 0)
 			(effects
 				(font
@@ -10624,7 +10608,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "A_HDJ_Library:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "A_HDJ_Library:TestPoint_Pad_D1.0mm"
 			(at 368.3 182.88 0)
 			(effects
 				(font
@@ -10852,7 +10836,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "A_HDJ_Library:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "A_HDJ_Library:TestPoint_Pad_D1.0mm"
 			(at 368.3 187.96 0)
 			(effects
 				(font
@@ -12486,7 +12470,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 368.2348 185.42 270)
+		(at 368.3 185.42 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -12495,7 +12479,7 @@
 		(fields_autoplaced yes)
 		(uuid "cba2bb17-eec6-4202-bdda-928b05c7ec87")
 		(property "Reference" "TP84"
-			(at 373.3148 184.1499 90)
+			(at 373.38 184.1499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12504,7 +12488,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 373.3148 186.6899 90)
+			(at 373.38 186.6899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12513,8 +12497,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "A_HDJ_Library:TestPoint_Pad_D1.5mm"
-			(at 368.2348 190.5 0)
+		(property "Footprint" "A_HDJ_Library:TestPoint_Pad_D1.0mm"
+			(at 368.3 190.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12523,7 +12507,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 368.2348 190.5 0)
+			(at 368.3 190.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12532,7 +12516,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 368.2348 185.42 0)
+			(at 368.3 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12541,7 +12525,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 368.2348 185.42 0)
+			(at 368.3 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12550,7 +12534,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 368.2348 185.42 0)
+			(at 368.3 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12559,7 +12543,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 368.2348 185.42 0)
+			(at 368.3 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)

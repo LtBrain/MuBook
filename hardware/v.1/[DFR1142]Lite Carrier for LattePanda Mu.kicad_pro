@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.2
+          "min_clearance": 0.25
         }
       },
       "diff_pair_dimensions": [
@@ -63,28 +63,7 @@
           "width": 0.12
         }
       ],
-      "drc_exclusions": [
-        [
-          "courtyards_overlap|199610749|142595000|7f9aa930-d9da-4b31-b553-66ae0cde5f7c|e5d10195-0961-4c0f-8c68-38f7ce1cba9e",
-          "SODIMM is tall enough"
-        ],
-        [
-          "courtyards_overlap|199645000|146420000|2113e9d9-5710-42da-9144-fe2b927ab3e2|7f9aa930-d9da-4b31-b553-66ae0cde5f7c",
-          ""
-        ],
-        [
-          "courtyards_overlap|201050000|147585000|468e1456-c3ab-4238-b192-cfdc02c6f7b6|7f9aa930-d9da-4b31-b553-66ae0cde5f7c",
-          "SODIMM is tall enough"
-        ],
-        [
-          "courtyards_overlap|209520000|149770000|7f9aa930-d9da-4b31-b553-66ae0cde5f7c|e5860a77-6b64-4ee6-8759-1e3def6d3368",
-          "SODIMM is tall enough"
-        ],
-        [
-          "courtyards_overlap|211165000|144345000|7f9aa930-d9da-4b31-b553-66ae0cde5f7c|de101410-9e81-4785-a8f3-03074a9da86b",
-          ""
-        ]
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -94,7 +73,7 @@
         "connection_width": "warning",
         "copper_edge_clearance": "error",
         "copper_sliver": "warning",
-        "courtyards_overlap": "warning",
+        "courtyards_overlap": "ignore",
         "creepage": "error",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
@@ -164,7 +143,7 @@
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.2,
         "min_track_width": 0.1161,
-        "min_via_annular_width": 0.1,
+        "min_via_annular_width": 0.05,
         "min_via_diameter": 0.2,
         "solder_mask_clearance": 0.0,
         "solder_mask_min_width": 0.0,
@@ -656,38 +635,6 @@
       },
       {
         "netclass": "90Ω",
-        "pattern": "/PCIe x4/SATA/SATA_TX_2+"
-      },
-      {
-        "netclass": "90Ω",
-        "pattern": "/PCIe x4/SATA/SATA_TX_2-"
-      },
-      {
-        "netclass": "90Ω",
-        "pattern": "/PCIe x4/SATA/SATA_RX_2+"
-      },
-      {
-        "netclass": "90Ω",
-        "pattern": "/PCIe x4/SATA/SATA_RX_2-"
-      },
-      {
-        "netclass": "90Ω",
-        "pattern": "/PCIe x4/SATA/SATA_RX_3+"
-      },
-      {
-        "netclass": "90Ω",
-        "pattern": "/PCIe x4/SATA/SATA_RX_3-"
-      },
-      {
-        "netclass": "90Ω",
-        "pattern": "/PCIe x4/SATA/SATA_TX_3+"
-      },
-      {
-        "netclass": "90Ω",
-        "pattern": "/PCIe x4/SATA/SATA_TX_3-"
-      },
-      {
-        "netclass": "90Ω",
         "pattern": "XI-"
       },
       {
@@ -696,51 +643,11 @@
       },
       {
         "netclass": "90Ω",
-        "pattern": "SATA3_TX+"
+        "pattern": "SATA*"
       },
       {
         "netclass": "90Ω",
-        "pattern": "SATA3_TX-"
-      },
-      {
-        "netclass": "90Ω",
-        "pattern": "SATA3_RX-"
-      },
-      {
-        "netclass": "90Ω",
-        "pattern": "SATA3_RX+"
-      },
-      {
-        "netclass": "90Ω",
-        "pattern": "/PCIe x4/SATA/SATA_TX_4-"
-      },
-      {
-        "netclass": "90Ω",
-        "pattern": "/PCIe x4/SATA/SATA_TX_4+"
-      },
-      {
-        "netclass": "90Ω",
-        "pattern": "SATA4_TX-"
-      },
-      {
-        "netclass": "90Ω",
-        "pattern": "SATA4_TX+"
-      },
-      {
-        "netclass": "90Ω",
-        "pattern": "SATA4_RX+"
-      },
-      {
-        "netclass": "90Ω",
-        "pattern": "SATA4_RX-"
-      },
-      {
-        "netclass": "90Ω",
-        "pattern": "/PCIe x4/SATA/SATA_RX_4+"
-      },
-      {
-        "netclass": "90Ω",
-        "pattern": "/PCIe x4/SATA/SATA_RX_4-"
+        "pattern": "/PCIe x4/SATA/SATA_*"
       }
     ]
   },
@@ -782,15 +689,9 @@
           "show": true
         },
         {
-          "group_by": false,
+          "group_by": true,
           "label": "Value",
           "name": "Value",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "Datasheet",
-          "name": "Datasheet",
           "show": true
         },
         {
@@ -801,14 +702,20 @@
         },
         {
           "group_by": false,
-          "label": "Qty",
-          "name": "${QUANTITY}",
+          "label": "Datasheet",
+          "name": "Datasheet",
           "show": true
         },
         {
           "group_by": false,
-          "label": "DNP",
-          "name": "${DNP}",
+          "label": "描述",
+          "name": "Description",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Qty",
+          "name": "${QUANTITY}",
           "show": true
         },
         {
@@ -816,6 +723,54 @@
           "label": "#",
           "name": "${ITEM_NUMBER}",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "DNP",
+          "name": "DNP",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "DigiKey_PN",
+          "name": "DigiKey_PN",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LCSC Part",
+          "name": "LCSC Part",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LCSC Part #",
+          "name": "LCSC Part #",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MFG_PN",
+          "name": "MFG_PN",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MPN",
+          "name": "MPN",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Package",
+          "name": "Package",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Part#",
+          "name": "Part#",
+          "show": false
         },
         {
           "group_by": false,
@@ -843,8 +798,8 @@
         },
         {
           "group_by": false,
-          "label": "描述",
-          "name": "Description",
+          "label": "DNP",
+          "name": "${DNP}",
           "show": true
         }
       ],

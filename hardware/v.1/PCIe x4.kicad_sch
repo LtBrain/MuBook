@@ -7263,7 +7263,7 @@
 		)
 		(uuid "ff8c641a-004e-49f1-ada2-abe6d745ee7f")
 	)
-	(label "SATA_TX_3+"
+	(label "SATA_TX_1+"
 		(at 303.53 294.64 0)
 		(effects
 			(font
@@ -7283,7 +7283,7 @@
 		)
 		(uuid "05fa9594-1c85-456e-bb99-e697e7f1302f")
 	)
-	(label "SATA_RX_3+"
+	(label "SATA_CRX_3+"
 		(at 229.87 304.8 0)
 		(effects
 			(font
@@ -7313,7 +7313,7 @@
 		)
 		(uuid "1d211761-1788-4864-b04f-c004bfc3a13f")
 	)
-	(label "SATA_RX_2-"
+	(label "SATA_CRX_2-"
 		(at 222.25 334.01 0)
 		(effects
 			(font
@@ -7323,7 +7323,7 @@
 		)
 		(uuid "2b16968f-8b50-4933-8b25-3cadaa085145")
 	)
-	(label "SATA_TX_3-"
+	(label "SATA_TX_1-"
 		(at 309.88 297.18 0)
 		(effects
 			(font
@@ -7333,7 +7333,7 @@
 		)
 		(uuid "36845e7a-917a-4ccb-a39b-150566050251")
 	)
-	(label "SATA_RX_3-"
+	(label "SATA_CRX_3-"
 		(at 223.52 302.26 0)
 		(effects
 			(font
@@ -7343,7 +7343,7 @@
 		)
 		(uuid "57a86dfa-2633-4613-94da-c2d54b5a27eb")
 	)
-	(label "SATA_RX_3-"
+	(label "SATA_RX_1-"
 		(at 309.88 304.8 0)
 		(effects
 			(font
@@ -7363,7 +7363,7 @@
 		)
 		(uuid "59310814-bbdd-4511-9252-a2f5c0cb4def")
 	)
-	(label "SATA_RX_3+"
+	(label "SATA_RX_1+"
 		(at 303.53 302.26 0)
 		(effects
 			(font
@@ -7383,7 +7383,7 @@
 		)
 		(uuid "69a3f77b-65e5-4a3b-b4d5-ad44669375b6")
 	)
-	(label "SATA_TX_3-"
+	(label "SATA_CTX_3-"
 		(at 229.87 297.18 0)
 		(effects
 			(font
@@ -7403,7 +7403,7 @@
 		)
 		(uuid "95cec663-fe75-44b3-b1db-c6d18f2ad067")
 	)
-	(label "SATA_TX_2+"
+	(label "SATA_CTX_2+"
 		(at 222.25 326.39 0)
 		(effects
 			(font
@@ -7423,7 +7423,7 @@
 		)
 		(uuid "a6556fe4-73a7-4c38-8486-3df8f669d200")
 	)
-	(label "SATA_TX_2-"
+	(label "SATA_CTX_2-"
 		(at 228.6 328.93 0)
 		(effects
 			(font
@@ -7453,7 +7453,7 @@
 		)
 		(uuid "ccf41f8c-6a18-4061-9626-e6c39c448b14")
 	)
-	(label "SATA_RX_2+"
+	(label "SATA_CRX_2+"
 		(at 228.6 336.55 0)
 		(effects
 			(font
@@ -7483,7 +7483,7 @@
 		)
 		(uuid "dbfd4ce3-a88c-423f-84bc-591dd1f98405")
 	)
-	(label "SATA_TX_3+"
+	(label "SATA_CTX_3+"
 		(at 223.52 294.64 0)
 		(effects
 			(font
@@ -7547,7 +7547,7 @@
 			)
 		)
 	)
-	(global_label "SATA3_RX+"
+	(global_label "SATA1_RX+"
 		(shape input)
 		(at 289.56 304.8 180)
 		(fields_autoplaced yes)
@@ -7591,7 +7591,7 @@
 			)
 		)
 	)
-	(global_label "SATA3_RX-"
+	(global_label "SATA1_RX-"
 		(shape input)
 		(at 289.56 302.26 180)
 		(fields_autoplaced yes)
@@ -7613,7 +7613,7 @@
 			)
 		)
 	)
-	(global_label "SATA3_RX-"
+	(global_label "SATA1_RX-"
 		(shape input)
 		(at 78.74 149.86 180)
 		(fields_autoplaced yes)
@@ -7701,7 +7701,7 @@
 			)
 		)
 	)
-	(global_label "SATA3_TX+"
+	(global_label "SATA1_TX+"
 		(shape input)
 		(at 78.74 157.48 180)
 		(fields_autoplaced yes)
@@ -7767,7 +7767,7 @@
 			)
 		)
 	)
-	(global_label "SATA3_TX-"
+	(global_label "SATA1_TX-"
 		(shape input)
 		(at 289.56 297.18 180)
 		(fields_autoplaced yes)
@@ -7789,7 +7789,7 @@
 			)
 		)
 	)
-	(global_label "SATA3_TX+"
+	(global_label "SATA1_TX+"
 		(shape input)
 		(at 289.56 294.64 180)
 		(fields_autoplaced yes)
@@ -7811,7 +7811,7 @@
 			)
 		)
 	)
-	(global_label "SATA3_RX+"
+	(global_label "SATA1_RX+"
 		(shape input)
 		(at 78.74 147.32 180)
 		(fields_autoplaced yes)
@@ -7899,7 +7899,7 @@
 			)
 		)
 	)
-	(global_label "SATA3_TX-"
+	(global_label "SATA1_TX-"
 		(shape input)
 		(at 78.74 154.94 180)
 		(fields_autoplaced yes)
@@ -9410,7 +9410,7 @@
 				)
 			)
 		)
-		(property "Value" "4K7"
+		(property "Value" "4.7K/1%"
 			(at 139.954 120.904 90)
 			(effects
 				(font
@@ -11259,7 +11259,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "45035f38-05a8-4ca3-8bf7-13353be3de7f")
 		(property "Reference" "C102"
 			(at 217.17 287.02 90)
@@ -12368,7 +12367,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "6e559797-b7fa-4c96-b621-ecd127f2f1db")
 		(property "Reference" "C103"
 			(at 224.79 289.56 90)
@@ -12626,7 +12624,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SATA 7PIN:CONN_67800-5005_MOL"
+		(property "Footprint" "A_HDJ_Library:CONN_67800-5005_MOL"
 			(at 240.03 323.85 0)
 			(effects
 				(font
@@ -12882,7 +12880,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SATA 7PIN:CONN_67800-5005_MOL"
+		(property "Footprint" "A_HDJ_Library:CONN_67800-5005_MOL"
 			(at 320.04 292.1 0)
 			(effects
 				(font
@@ -13426,7 +13424,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SATA 7PIN:CONN_67800-5005_MOL"
+		(property "Footprint" "A_HDJ_Library:CONN_67800-5005_MOL"
 			(at 240.03 292.1 0)
 			(effects
 				(font
@@ -16175,7 +16173,8 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 224.79 336.55 90)
+		(at 224.79 336.55 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16199,7 +16198,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 228.6 335.5848 0)
+			(at 220.98 335.5848 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16678,13 +16677,13 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 217.17 326.39 90)
+		(at 217.17 326.39 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "df33b0ca-6bde-4475-b6d2-a7de2e5e9cba")
 		(property "Reference" "C106"
 			(at 217.17 318.77 90)
@@ -16703,7 +16702,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 220.98 325.4248 0)
+			(at 213.36 325.4248 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16929,7 +16928,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1K"
+		(property "Value" "1K/1%"
 			(at 156.845 212.7249 90)
 			(effects
 				(font
@@ -17025,7 +17024,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SATA 7PIN:CONN_67800-5005_MOL"
+		(property "Footprint" "A_HDJ_Library:CONN_67800-5005_MOL"
 			(at 320.04 323.85 0)
 			(effects
 				(font
@@ -17560,13 +17559,13 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 224.79 328.93 90)
+		(at 224.79 328.93 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "f8af06a3-a51d-4069-b883-94c82b50e5cc")
 		(property "Reference" "C108"
 			(at 224.79 321.31 90)
@@ -17585,7 +17584,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 228.6 327.9648 0)
+			(at 220.98 327.9648 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17918,7 +17917,8 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 217.17 334.01 90)
+		(at 217.17 334.01 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17942,7 +17942,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 220.98 333.0448 0)
+			(at 213.36 333.0448 0)
 			(effects
 				(font
 					(size 1.27 1.27)
