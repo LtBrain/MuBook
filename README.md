@@ -1,8 +1,9 @@
 # **Mubook**
 Mubook is a "portable" x86 based system that is designed to house both mini PC and homelab functionalities while still being small enough to be easily carried and expandable enough for processor upgrades.
 
-<img width="3296" height="2547" alt="CUPRUM (2)" src="https://github.com/user-attachments/assets/121b9415-c04e-4734-bf7b-a20187e0ad81" />
-
+  
+<img width="3296" height="2547" alt="CUPRUM (3)" src="https://github.com/user-attachments/assets/5ef018bf-9899-4ca1-b99e-ba3a08658427" />  
+  
 
   
 The project itself is a submission to **Hackclub Highway** and has the capability to support 4 **3.5 inch** HDDs and **M.2** cards while maintaing upgradeability 
