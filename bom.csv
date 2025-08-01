@@ -76,6 +76,8 @@ D78,1,LED Yellow,LS Q976-NR-1-0-20-R18,https://octopart.com/opatz8j6/a1?t=ak2w73
 L78,1,4.7u,DFE252012P-4R7M=P2,https://octopart.com/opatz8j6/a1?t=wOEVGKRJiyJgwN8r_vvp6JYrZw_4fEVdRlYOm9kjnLyhaNy1oqPoEnMGJn1aRJk5UiktLkGvwgCymUePzUugOrQ1eOWT9wMc0dPN_fIfvC5X_JsBoSzB3R4VD11MXUv7eclcWu5jnCxRQPzkMAWOAbbZewxAlwrdnKxVU67BJOdlpIqTr-bvLlnyNMPbCXsNekd257s1AtNHQo9PdFQIU17F_9nUbh1G-TWOfDTOOMpWawA32qZ-J3_SfynmdP2am50aqIT7Z-DqjewhO6YkSESKrAI,0.22
 A1,1,Lattepanda Mu,,https://www.dfrobot.com/product-2820.html?gad_source=1&gad_campaignid=22388643497&gbraid=0AAAAADucPlDWGl9GjMwCu9NUkvI0g1I0j&gclid=CjwKCAjwqKzEBhANEiwAeQaPVVX8z4UD-fLKcfAMflwqesWk0d2_tY_UTDobAzBLswxJuWr7Pf9TXxoC2FgQAvD_BwE,139
 PCB,5,PCB,,jlcpcb.com,36.3
+Cooler,1,CPU_Cooler,,https://www.digikey.com/en/products/detail/dfrobot/FIT0981/23028656?gclsrc=aw.ds&gad_source=1&gad_campaignid=20228387720&gbraid=0AAAAADrbLljNEJFKSMKdpbtSE9S5C7bb8&gclid=CjwKCAjwqKzEBhANEiwAeQaPVex0AYRyr_tLrbVgaHTn4Xs9rN43NIOWta-Gw2SNt-T2-LigXYORXRoCbpYQAvD_BwE,12
+40MMFan,1,40mm_Fan,,https://www.newark.com/multicomp/mc002686/axial-fan-40mm-12vdc-7cfm-20-6dba/dp/57AC0090?gQT=1,7
 Stencil,1,Stencil,,jlcpcb.com,7
 Shipping,,,JLCPCB+LCSC+Mouser+Digikey,"(32.8, 15.45, 7.99, 6.99)",63.23
-,,,,,298.4816
+,,,,,319.4816
