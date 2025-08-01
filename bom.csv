@@ -80,4 +80,8 @@ Cooler,1,CPU_Cooler,,https://www.digikey.com/en/products/detail/dfrobot/FIT0981/
 40MMFan,1,40mm_Fan,,https://www.newark.com/multicomp/mc002686/axial-fan-40mm-12vdc-7cfm-20-6dba/dp/57AC0090?gQT=1,7
 Stencil,1,Stencil,,jlcpcb.com,7
 Shipping,,,JLCPCB+LCSC+Mouser+Digikey,"(32.8, 15.45, 7.99, 6.99)",63.23
+<<<<<<< HEAD
 ,,,,,319.4816
+=======
+,,,,,298.4816
+>>>>>>> 7766bf8990e7bde028b985fbc37a93e2c8f0ff6b
