@@ -74,9 +74,8 @@ J18,1,USB_C_Receptacle_USB2.0,DX07S016JA1R1500,https://octopart.com/opatz8j6/a1?
 U78,1,ASM1061,SI-MPE40095,https://www.aliexpress.us/item/3256808756466925.html?spm=a2g0o.productlist.main.22.4dfbIAowIAowHw&algo_pvid=96e76fbd-4447-435f-8e8f-2b087bca9885&algo_exp_id=96e76fbd-4447-435f-8e8f-2b087bca9885-21&pdp_ext_f=%7B%22order%22%3A%223%22%2C%22eval%22%3A%221%22%7D&pdp_npi=4%40dis%21USD%212.25%211.80%21%21%212.25%211.80%21%402101eac917540119174527371e329d%2112000047296380942%21sea%21US%216438752359%21ABX&curPageLogUid=fDmL4aZAT9Xu&utparam-url=scene%3Asearch%7Cquery_from%3A,2.52
 D78,1,LED Yellow,LS Q976-NR-1-0-20-R18,https://octopart.com/opatz8j6/a1?t=ak2w73D6qj1GNUt0oFkO8I9vXL44lVWVLSUeRffXwCkHxZYsgFQmq3N4A8gsEeDTo8gwLlTASRt8uSCTmlmnttlE1DLf28LG8RhHxy35JG5KdwA_FlYQWWxqEMMMgER0BrIaQmPLgZOSQdjwCnrFlrQhPWNTnM9uCwKGLQTauwiKax9pAb0vEZNN_JL8osGnssaF8_wFHPRHtWAJTJdT-_s3kQE5PN_6NBsN9e3F4IR92oGUSudlo9u0hZyLzdORLQ8H90CtDyXeqxDRAfE18yMPOso,0.14
 L78,1,4.7u,DFE252012P-4R7M=P2,https://octopart.com/opatz8j6/a1?t=wOEVGKRJiyJgwN8r_vvp6JYrZw_4fEVdRlYOm9kjnLyhaNy1oqPoEnMGJn1aRJk5UiktLkGvwgCymUePzUugOrQ1eOWT9wMc0dPN_fIfvC5X_JsBoSzB3R4VD11MXUv7eclcWu5jnCxRQPzkMAWOAbbZewxAlwrdnKxVU67BJOdlpIqTr-bvLlnyNMPbCXsNekd257s1AtNHQo9PdFQIU17F_9nUbh1G-TWOfDTOOMpWawA32qZ-J3_SfynmdP2am50aqIT7Z-DqjewhO6YkSESKrAI,0.22
-A1,1,Lattepanda Mu,,https://www.dfrobot.com/product-2820.html?gad_source=1&gad_campaignid=22388643497&gbraid=0AAAAADucPlDWGl9GjMwCu9NUkvI0g1I0j&gclid=CjwKCAjwqKzEBhANEiwAeQaPVVX8z4UD-fLKcfAMflwqesWk0d2_tY_UTDobAzBLswxJuWr7Pf9TXxoC2FgQAvD_BwE,0,139
-Cooler, 1, LattePanda Cooler,https://www.digikey.com/en/products/detail/dfrobot/FIT0981/23028656?gclsrc=aw.ds&gad_source=1&gad_campaignid=20228387720&gbraid=0AAAAADrbLljNEJFKSMKdpbtSE9S5C7bb8&gclid=CjwKCAjwqKzEBhANEiwAeQaPVex0AYRyr_tLrbVgaHTn4Xs9rN43NIOWta-Gw2SNt-T2-LigXYORXRoCbpYQAvD_BwE, 12
+A1,1,Lattepanda Mu,,https://www.dfrobot.com/product-2820.html?gad_source=1&gad_campaignid=22388643497&gbraid=0AAAAADucPlDWGl9GjMwCu9NUkvI0g1I0j&gclid=CjwKCAjwqKzEBhANEiwAeQaPVVX8z4UD-fLKcfAMflwqesWk0d2_tY_UTDobAzBLswxJuWr7Pf9TXxoC2FgQAvD_BwE,139
 PCB,5,PCB,,jlcpcb.com,36.3
 Stencil,1,Stencil,,jlcpcb.com,7
-Shipping,,,JLCPCB+LCSC+Mouser+Digikey+Newark,"(32.8, 15.45, 7.99, 6.99, 7)",70.23
-,,,,,317.4816
+Shipping,,,JLCPCB+LCSC+Mouser+Digikey,"(32.8, 15.45, 7.99, 6.99)",63.23
+,,,,,298.4816
