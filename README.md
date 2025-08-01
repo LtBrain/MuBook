@@ -9,6 +9,8 @@ Mubook is a "portable" x86 based system that is designed to house both mini PC a
 The project itself is a submission to **Hackclub Highway** and has the capability to support 4 **3.5 inch** HDDs and **M.2** cards while maintaining upgradeability 
 and much higher performance over other SoM boards with its **Intel N100** processor.  
 
+Onshape Link: https://cad.onshape.com/documents/5acc811496d77f90c0752dd0/w/e9eca540294b20cf51e85b2b/e/d6c7fa954eee015fd1c89e31?renderMode=0&uiState=688c2f7e44961510ff4b2d40
+
 ## Features
    - [x] **2x USB 3.0 Type A**
    - [x] **2x USB 2.0 Type A**
@@ -108,8 +110,9 @@ I decided to design MuBook to create a lightweight and compact homelab system (a
 | R43 | 1.0 | 56K/1% | ERJ-2RKF5602X | [link](https://octopart.com/opatz8j6/a1?t=EyI8Sj9VL4tAHMc2r00M1pQFrDItLAgN1knyBtYx65B5-Jb_G2bPdk6gjJ_ffU7WggE_cCA-DTwcGu56NeHz-RlF6_26zBUh90sRXxdkK-so4Jj2xB2mngBBjaSYZifiBIRRL5BUMyGuua_cFRIHnQSPMsLVAakgPHv0oLJtuTHLNTB-jNI99lq7HbOc7dIq1qTEOsDIsQGD00rbuUmWKZqGj1cG9mRCyjqXJVszoXox82caWgG3aeAqMKn07mIrXtjiKqlptKVlHuGNolrHvQfxMrE) | 0.004 |
 | J18 | 1.0 | USB_C_Receptacle_USB2.0 | DX07S016JA1R1500 | [link](https://octopart.com/opatz8j6/a1?t=CnbPEn9Ikr_pOnV4uu7uJRCkgz6r59sOu4QPn5KY5gpE4rIkB4-h-arlJF8sa5eSHHUY5sTRz9mRW-zaMhI_L8JR159Qka2LM0agqzCAnBk4RSyUIqVeUfMOjxBegVMzDml6jjs5eYqYE2o3lXOAV4orvrdXrW_-d6gh-Y7nD...)| 3.34 |  
 
-Total: 300 USD
+Total: 300 USD  
 
+I currently have pin headers at my house so that's why they don't have links or prices.  Also I am extremely sorry for the massive BOM :( 
 
 
 
