@@ -1442,7 +1442,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole_2.2mm_M2_DIN965_Pad"
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
 			(at 473.71 336.55 0)
 			(effects
 				(font
@@ -1602,7 +1602,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole_2.2mm_M2_DIN965_Pad"
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad"
 			(at 499.11 349.25 0)
 			(effects
 				(font
@@ -1944,7 +1944,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole_2.2mm_M2_DIN965_Pad"
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad"
 			(at 473.71 349.25 0)
 			(effects
 				(font

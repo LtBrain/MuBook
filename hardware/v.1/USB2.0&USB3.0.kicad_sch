@@ -4384,7 +4384,7 @@
 		)
 		(uuid "77f14f5a-104f-41b1-856c-4ffe400c61ba")
 	)
-	(label "CON_USB2_D_P"
+	(label "CON_USB2_D_N"
 		(at 299.72 137.16 0)
 		(effects
 			(font
@@ -4454,7 +4454,7 @@
 		)
 		(uuid "da8b9695-5bb0-451f-a80b-9f1340256875")
 	)
-	(label "CON_USB1_D_N"
+	(label "CON_USB1_D_P"
 		(at 259.08 127 0)
 		(effects
 			(font
@@ -4484,7 +4484,7 @@
 		)
 		(uuid "dd8c4b49-8d28-4bdf-8626-be41ad3bf4e3")
 	)
-	(label "CON_USB2_D_N"
+	(label "CON_USB2_D_P"
 		(at 299.72 127 0)
 		(effects
 			(font
@@ -4514,7 +4514,7 @@
 		)
 		(uuid "f8db6a86-8edb-4a49-83e0-de823cef2650")
 	)
-	(label "CON_USB1_D_P"
+	(label "CON_USB1_D_N"
 		(at 259.08 137.16 0)
 		(effects
 			(font
@@ -5088,7 +5088,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "A_HDJ_Library:USB_C_Receptacle_G-Switch_GT-USB-7010ASV"
+		(property "Footprint" "Connector_USB:USB_C_Receptacle_JAE_DX07S016JA1R1500"
 			(at 340.36 40.64 0)
 			(effects
 				(font
@@ -5307,7 +5307,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "A_HDJ_Library:USB_C_Receptacle_G-Switch_GT-USB-7010ASV"
+		(property "Footprint" "Connector_USB:USB_C_Receptacle_JAE_DX07S016JA1R1500"
 			(at 340.36 100.33 0)
 			(effects
 				(font

@@ -1,0 +1,100 @@
+
+(kicad_symbol_lib (version 20211014) (generator kicad_symbol_editor)
+  (symbol "694106106102" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+    (property "Reference" "J" (id 0) (at 0.0 2.54 0)
+      (effects (font (size 1.27 1.27)) (justify bottom))
+    )
+    (property "Value" "694106106102" (id 1) (at -5.08 -7.62 0)
+      (effects (font (size 1.27 1.27)) (justify bottom left))
+    )
+    (property "Footprint" "694106106102:694106106102" (id 2) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (symbol "694106106102_0_0"
+      (arc (start -3.175 1.27) (mid -4.445 -0.0) (end -3.175 -1.27)
+        (stroke (width 0.1524) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts (xy -3.175 1.27) (xy 1.27 1.27)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 1.27 1.27) (xy 1.27 -1.27)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 1.27 -1.27) (xy -3.175 -1.27)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 1.27 -1.27) (xy 1.27 -1.905)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 1.27 -1.905) (xy 2.54 -1.905)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 2.54 -1.905) (xy 2.54 1.905)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 2.54 1.905) (xy 1.27 1.905)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 1.27 1.905) (xy 1.27 1.27)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 2.54 -5.08) (xy -3.175 -5.08)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -3.175 -5.08) (xy -3.81 -3.81)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -3.81 -3.81) (xy -4.445 -5.08)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 0.0 -2.54) (xy 0.0 -5.08)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy 0.0 -2.54) (xy 2.54 -2.54)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts
+          (xy 0.0 -5.08)
+          (xy -0.508 -3.81)
+          (xy 0.508 -3.81)
+          (xy 0.0 -5.08)
+        )
+        (stroke (width 0.1524)) (fill (type outline))
+      )
+      (pin passive line (at 5.08 0.0 180.0) (length 2.54)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "1"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at 5.08 -5.08 180.0) (length 2.54)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "2"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at 5.08 -2.54 180.0) (length 2.54)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "3"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at 5.08 0.0 180.0) (length 2.54)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "A1"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+    )
+  )
+)
