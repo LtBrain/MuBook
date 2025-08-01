@@ -30,12 +30,8 @@ fp-info-cache
 
 # Exported BOM files
 *.xml
-*.csv
+
 
 # project-specific
-image/
-production/
-*.gcode
-*.3mf
-*.zip
+
 
