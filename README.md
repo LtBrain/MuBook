@@ -9,6 +9,8 @@ Mubook is a "portable" x86 based system that is designed to house both mini PC a
 The project itself is a submission to **Hackclub Highway** and has the capability to support 4 **3.5 inch** HDDs and **M.2** cards while maintaining upgradeability 
 and much higher performance over other SoM boards with its **Intel N100** processor.  
 
+Onshape Link: https://cad.onshape.com/documents/5acc811496d77f90c0752dd0/w/e9eca540294b20cf51e85b2b/e/d6c7fa954eee015fd1c89e31?renderMode=0&uiState=688c2f7e44961510ff4b2d40
+
 ## Features
    - [x] **2x USB 3.0 Type A**
    - [x] **2x USB 2.0 Type A**
