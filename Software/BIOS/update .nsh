@@ -1,0 +1,1 @@
+AfuEfix64.efi LP-BS-S70NC1R200-DR-B-SATA.bin /r /p /b /n /x
