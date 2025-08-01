@@ -231,7 +231,21 @@ On the PCB aspect of things, several things were changed from the review. The VD
   
 I also added some nice silkscreen touches to the board just for aesthetics.  
 
-(Time: 5 Hrs)
+(Time: 5 Hrs)  
+
+2025-07-31
+---
+
+Last day! Today was just mostly piecing _everything_ together for submission. The BOM finally got filled out today on Octopart and I exported it to a google sheet and the repo: https://docs.google.com/spreadsheets/d/1PgW1D4j8ihS-p_X-fiT0mnAKiW7zAq-SEehbU5WOdEI/edit?usp=sharing. I finalized the CAD work and the case, finished up the readme and created a production directory to put the gerbers and step files in.  
+  
+Finished PCB:  
+<img width="760" height="642" alt="image" src="https://github.com/user-attachments/assets/35354bfe-3a8a-44ba-9483-cdfd03d1176f" />  
+
+(Time: 8 Hrs)
+
+
+
+
 
 
 
